@@ -12,10 +12,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    username = params.fetch("query_username")
-    userole = params.fetch("query_userrole")
-    usecompany = params.fetch("query_usercompany")
-    useindustry = params.fetch("query_userindustry")
+    username = params.fetch("query_name")
+    userrole = params.fetch("query_role")
+    usercompany = params.fetch("query_company")
+    userindustry = params.fetch("query_industry")
 
     new_user = User.new
     new_user.name = username
