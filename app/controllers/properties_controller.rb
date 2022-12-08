@@ -11,7 +11,8 @@ class PropertiesController < ApplicationController
   def user_index
     matching_properties = Property.all
 
-    @list_of_properties = matching_properties.order({ :created_at => :desc })
+
+    @list_of_properties = matching_properties.includes(:scores).order("scores.overall_score desc") 
 
     render({ :template => "properties/user_index.html.erb" })
   end
