@@ -1,0 +1,170 @@
+﻿metaId,metaInserted,metaUpdated,metaStatus,name,associatedPropertyParent,propertySize,propertySizeSqFt,propertySizeType,propertySizeMetric,sizeFrom,sizeTo,SizefromSqFt,sizeToSqFt,areaSizeType,areaSizeUnit,floorDescription,availabilityStatus,address1,address2,postcode,town,county,lat,lon,zoom,heading,pitch,locationDescription,fileNumber,specificationDescription,specificationSummary,specificationPromo,specificationsPresentable,featured,featureDate,publishPrice,publishRent,energyCurr1,energyCurr2,energyCurr3,energyCurr4,energyCurr5,energyCurr6,energyCurr7,energyPot1,energyPot2,energyPot3,energyPot4,energyPot5,energyPot6,energyPot7,rentPrefix,areaRent,rentPriceMetric,rentPriceMetricText,pricePrefix,areaPrice,salePriceMetric,salePriceMetricText,rateableValue,rateableValueMultiplier,ratesPayable,rateableValuePeriod,rateableValueText,serviceCharge,serviceChargePeriod,serviceChargeText,initialYield,terms,leaseType,marketingRegion,buildingCondition,buildingGrade,breakdown,leaseLength,controlledBy,wasOurInstruction,showPdfOnSite,summaryPdfUrl,lastPublishChanges,marketingText1,marketingText2,marketingText3,marketingText4,marketingText5,marketingTitle1,marketingTitle2,marketingTitle3,marketingTitle4,earlyBird,selfContained,towerClassification,breeamRating,freeholdType,propertyType,marketingTitle5,isInvestment,isDevelopment,marketingTitleTransport,marketingTextTransport,publishToNovaloca,publishToEG,video,epcexempt,epccurrentband,epccurrentvalue,epccurrentband_range,epccurrentcomment,epcpotentialband,epcpotentialvalue,epcpotentialband_range,epcpotentialcomment,epcexempt_reason,epcexempt_reason_string,estateCharge,estateChargePeriod,estateChargeText,enhancedListingenabled,enhancedListingpublished,possessionimmediate,possessionquarter,possessionyear,possessioncomment,lettingDetailleaseLengthYears,lettingDetailleaseLengthMonths,lettingDetailrentUpdated,lettingDetailrentPublished,saleDetailpriceUpdated,saleDetailpricePublished,saleDetailleaseLengthYears,saleDetailsaleType,saleDetailgroundRent,saleDetailgroundRentMetric,saleDetailpeppercornRent,saleDetailleaseLengthMonths,uprn,grossYield,rentalIncome,lastUnpublished,lastPublished,projectCode,classOfUse,rentalIncomeMetric,enhancedListingUrls,enhancedListingnotes,metaid,name,SequenceNumber,metaStatus,metaInserted,metaUpdated,metaOrder,description,fileName,filePath,large,thumb,front_listing,front_back_large,back_prop_view,six_four,front_profile,front_profile_large
+4508,08:01.0,03:37.0,Published,Senator,NULL,155000,155000,nia,sqft,3500,11817,3500,11817,nia,sqft,NULL,available,85 Queen Victoria Street,NULL,EC4V 4AB,0,0,51.511943,-0.09585,17,150.272677,14.181959,"Senator is located approximately 500 metres south west from The Bank of England, occupying a substantial island site on the south side of Queen Victoria Street with over 150 metres of impressive frontage.  This prime location has attracted a diverse range of office occupiers from the banking, corporate, legal, professional and media sectors and boasts a wealth of local amenity. <br />
+<br />
+Senator offers 10 underground stations all within a 10-minute walk. Crossrail will improve accessibility even further with fast cross-London connections, arriving in nearby Moorgate in 2018. Discover the Cycle Superhighway that runs alongside Senator for the easiest cycle access and use the Santander Cycles that are just a 1-minute walk away. Or take in river views on the Thames Clipper from Blackfriars.",JLL-04508,"<h2>Accommodation</h2><table class=""floor-units"" width=""100%""><thead><tr><th style=""background-color: #c5c5c5; color: black"">Floor/Unit</th><th style=""background-color: #c5c5c5; color: black"">Sq ft</th><th style=""background-color: #c5c5c5; color: black"">Availability</th></tr></thead><tbody><tr><td>6th</td><td>18,824</td><td>Occupied</td></tr><tr><td>5th</td><td>20,939</td><td>Occupied</td></tr><tr><td>4th</td><td>21,409</td><td>Occupied</td></tr><tr><td>3rd</td><td>21,880</td><td>Occupied</td></tr><tr><td>1st</td><td>9,599</td><td>Occupied</td></tr><tr><td>Ground</td><td>6,878</td><td>Occupied</td></tr><tr><td>Lower Ground</td><td>11,817</td><td>Available</td></tr></tbody></table><h2>Specification</h2><p>• Street level landscaping & improvement of the public realm• New cladding to the façade• New rooftop pavilion & landscaped terraces• Private terrace on 6th floor• Remodelled reception• Comprehensive refurbishment of office floors• New 4 pipe fan coil air conditioning on L3 • L6• 5 x 16 person passenger lifts• 208 bicycle spaces & lockers• 13 showers, drying room & changing facilities• 7 car parking spaces</p><h2>Viewings</h2><p>Strictly by appointment by the joint sole agents.</p><h2>Terms</h2><p>The accommodation is available by way of a new lease direct from the landlord for a term until August 2023.</p><h2>Overview</h2><p>- New cladding to the facade<br />
+- New reception<br />
+- Central atrium<br />
+- Roof terrace<br />
+<br />
+The property is set in an attractive environment overlooking Cleary Gardens with an impressive landscaped frontage to Queen Victoria Street. The Millennium Footbridge is a short walk from the property and provides direct links to the numerous commercial and leisure facilities on the South Bank including Tate Modern Art Gallery and the Globe Theatre.</p>","Plug and play, flexible workspace in St. Paul's Quarter.",NULL,,0,NULL,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Guiding,27.5,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,NULL,10.47,sqft,NULL,10.97,sqft,NULL,NULL,Lease until August 2023,new,london-city,under-refurbishment,a,3,Lease until August 2023,landlord,1,0,,10/18/22,"• Street level landscaping & improvement of the public realm• New cladding to the façade• New rooftop pavilion & landscaped terraces• Private terrace on 6th floor• Remodelled reception• Comprehensive refurbishment of office floors• New 4 pipe fan coil air conditioning on L3 • L6• 5 x 16 person passenger lifts• 208 bicycle spaces & lockers• 13 showers, drying room & changing facilities• 7 car parking spaces",Strictly by appointment by the joint sole agents.,The accommodation is available by way of a new lease direct from the landlord for a term until August 2023.,#NAME?,,Specification,Viewings,Terms,Overview,0,0,0,NULL,freehold,NULL,,0,0,NULL,NULL,1,1,NULL,0,C,59,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,10/18/22,2/26/18,NULL,NULL,NULL,Freehold,NULL,NULL,NULL,NULL,10091781828,NULL,NULL,NULL,10/21/16,NULL,,annum,,NULL,4508,1159_JLL_SenatorHouse_7th_NE_Interior Option A_2017-02-09-FINAL.jpg,0,draft,5/17/17 9:31,2/28/18 20:09,13,1159_JLL_SenatorHouse_7th_NE_Interior Option A_2017-02-09-FINAL.jpg,dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcad1cfb7cb1b10099e2c43629a8b008-letting2868.jpeg
+11299,21:52.0,59:11.0,Draft,58 Victoria Embankment,NULL,44003.35,44003.35,nia,sqft,5478,12286,5478,12286,nia,sqft,NULL,available,58 Victoria Embankment,NULL,EC4Y 0DS,0,0,51.511409,-0.108009,15,270,NULL,"Located on the bank of the River Thames, 58 Victoria Embankment’s stunning traditional frontage creates a memorable first impression and a distinct sense of arrival. The new Grade A accommodation provides innovative office space, set to resonate with today’s modern occupiers. The building serves as a hub for discerning businesses with shared meeting room space, shared event space, a coffee shop, lounge and bar area for all tenants and a communal roof terrace. The building is a short walk from the new Blackfriars station which serves the Thameslink, District & Circle line.",JLL-11299,"<h2>Specification</h2><p>Close to public transport</p><h2>Viewings</h2><p>Strictly by appointment by the sole agents.</p><h2>Availability</h2><p>Now.</p><h2>Nearest Tube Stations</h2><p>5 Minute Walk -<br />
+Blackfriars<br />
+City Thameslink<br />
+10 Minute Walk -<br />
+Temple<br />
+St. Paul's<br />
+15 Minute Walk -<br />
+Waterloo Station<br />
+Embankment Station<br />
+Cannon Street Underground Station<br />
+Chancery Lane Station<br />
+Southwark<br />
+Mansion House Station<br />
+Waterloo Underground Station<br />
+Farringdon<br />
+Farringdon Station<br />
+Holborn Station<br />
+Covent Garden<br />
+Barbican Station<br />
+London Waterloo East<br />
+London Cannon Street</p>",58 Victoria Embankment has been entirely rebuilt behind a retained façade to offer new Grade A office accommodation.,NULL,,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,64.5,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,NULL,21,sqft,NULL,11.77,sqft,NULL,NULL,NULL,new,london-city,2nd-hand,b,2,,landlord,0,0,,NULL,Close to public transport,Strictly by appointment by the sole agents.,Now.,"5 Minute Walk -
+Blackfriars
+City Thameslink
+10 Minute Walk -
+Temple
+St. Paul's
+15 Minute Walk -
+Waterloo Station
+Embankment Station
+Cannon Street Underground Station
+Chancery Lane Station
+Southwark
+Mansion House Station
+Waterloo Underground Station
+Farringdon
+Farringdon Station
+Holborn Station
+Covent Garden
+Barbican Station
+London Waterloo East
+London Cannon Street",,Specification,Viewings,Availability,Nearest Tube Stations,0,0,0,excellent,NULL,NULL,,0,0,NULL,NULL,0,0,NULL,0,B,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,,annum,,NULL,11299,58 VE 1.jpg,0,published,2/26/18 9:15,2/26/18 9:15,1,58 VE 1.jpg,045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/045b4da781f0ccb5005dcc5e8fcd917c-letting37796.jpeg
+7768,52:11.0,04:56.0,Draft,1 Angel Lane,NULL,655449,655449,nia,sqft,11495,11495,11495,11495,nia,sqft,NULL,available,1 Angel Lane,90 Upper Thames Street,EC4R 3AB,0,0,51.509732,-0.089211,18,270.088211,-3.91568,NULL,JLL-07768,"<h2>Specification</h2><p>- On Site Canteen<br />
+- Corporate meeting suite and dining area<br />
+- Gym<br />
+- Auditorium<br />
+- Spectacular roof terrace<br />
+- 1:8 m2 occupancy<br />
+<br />
+- Auditorium<br />
+- Gym<br />
+- Front of house top floor facilities<br />
+- Riverside views throughout<br />
+- Spectacular communal terrace adjacent to 6th floor restaurant<br />
+- Private riverside terrace (5th E only)<br />
+- Impressive entrance<br />
+- Bridge link across Upper Thames St with separate lobby<br />
+- Parking<br />
+- Triple source power<br />
+- Substantial standby<br />
+- UPS</p>",1 Angel lane offers high quality refurbished office accommodation with fantastic river views,NULL,,0,NULL,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Guiding,65,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,NULL,27,sqft,NULL,13.14,sqft,NULL,NULL,Sub-lease available from June 2019 for a term expiring June 2029,sub-lease,london-city,2nd-hand,a,NULL,Sub-lease available from June 2019 for a term expiring June 2029,tenant,0,0,,NULL,"- On Site Canteen
+- Corporate meeting suite and dining area
+- Gym
+- Auditorium
+- Spectacular roof terrace
+- 1:8 m2 occupancy
+
+- Auditorium
+- Gym
+- Front of house top floor facilities
+- Riverside views throughout
+- Spectacular communal terrace adjacent to 6th floor restaurant
+- Private riverside terrace (5th E only)
+- Impressive entrance
+- Bridge link across Upper Thames St with separate lobby
+- Parking
+- Triple source power
+- Substantial standby
+- UPS",,,,,Specification,,,,0,0,0,excellent,freehold,NULL,,0,0,NULL,NULL,0,0,NULL,0,B,49,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,NULL,NULL,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,Freehold,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,,annum,https://my.matterport.com/show/?m=fBJEhnfxnks,NULL,7768,Hero River.jpg,0,published,10/14/22 10:01,10/14/22 10:01,1,Hero River.jpg,6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/6361e7a713028f2858c53e1269129ba9-b83ce7d127817e2ec5cc28c5e161e42eHero%20River.jpg
+15246,39:08.0,26:50.0,Published,Watling House,NULL,95332,95332,nia,sqft,11979,11979,11979,11979,nia,sqft,NULL,available,33 Cannon Street,"City Core, City Southern",EC4M 5SB,0,0,51.512715,-0.095103,18,65.214888,25.72952,"33 Cannon Street is situated on a prominent corner at the junction of Cannon street and Bread Street. The building is on a virtual island site ensuring excellent levels of natural light. Mansion House underground station is within a moment’s walk of the building, with Bank, St Pauls and Cannon street within a few minutes’ walk.",JLL-15246,"<h2>Accommodation</h2><table class=""floor-units"" width=""100%""><thead><tr><th style=""background-color: #c5c5c5; color: black"">Floor/Unit</th><th style=""background-color: #c5c5c5; color: black"">Size</th><th style=""background-color: #c5c5c5; color: black"">Availability</th></tr></thead><tbody><tr><td>6th</td><td>11,979 sq ft</td><td>Available</td></tr></tbody><tfoot><tr><td><strong>&nbsp;</strong></td><td><strong>&nbsp;</strong></td><td><strong>&nbsp;</strong></td></tr></tfoot></table><h2>Specification</h2><p>Comprehensive refurbished 6th floor to include brand new partially exposed CAT A, new lift lobbies and WCS. The building reception has also been remodelled and comprehensively refurbished.</p><h2>Terms</h2><p>Available by way of a new lease direct from the Landlord.</p>","Newly refurbished 6th floor with brand new partially exposed CAT A, new lift lobbies and WCS.",NULL,,0,NULL,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Quoting,68.5,sqft,Quoting rent,NULL,NULL,fullprice,NULL,NULL,NULL,25.25,sqft,Estimated,13.88,sqft,NULL,NULL,NULL,new,london-city,refurbished,a,2,,landlord,1,1,https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/pdf/1790dc0a9288b1e0f9dde85d731dabe9.pdf,11/17/22,"Comprehensive refurbished 6th floor to include brand new partially exposed CAT A, new lift lobbies and WCS. The building reception has also been remodelled and comprehensively refurbished.",Available by way of a new lease direct from the Landlord.,,,,Specification,Terms,,,0,0,0,NULL,freehold,NULL,,0,0,NULL,NULL,1,1,NULL,0,B,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,4,2020,NULL,NULL,NULL,11/17/22,7/14/21,NULL,NULL,NULL,Freehold,NULL,NULL,NULL,NULL,2E+11,NULL,NULL,NULL,4/29/19,1000491020,,annum,"https://my.matterport.com/show/?m=DfidP4Uzb9k, https://my.matterport.com/show/?m=d91x6pPVPT5, https://my.matterport.com/show/?m=qcJg4LRPdMs",NULL,15246,33CS2.jpg,0,published,5/3/19 8:04,9/8/22 10:52,0,33CS2.jpg,06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/06b7b373969125d0b67a6e05231d38b0-letting6279.jpeg
+7331,50:52.0,26:15.0,Published,18 St. Swithin's Lane,NULL,26222,26222,nia,sqft,5617,11355,5617,11355,nia,sqft,NULL,available,18 St. Swithin's Lane,NULL,EC4N 8AD,0,NULL,51.511468,-0.089382,16,35.831283,16.200128,"18 St Swithin's Lane is located in the heart of the City and benefits from excellent transport links. The building is located immediately opposite Cannon Street Station, serviced by the District & Circle underground lines and mainline rail network. Bank Station is only 100 metres away with additional links to the Northern, Central, Waterloo & City, Circle, District and DLR lines.<br />
+<br />
+The building is also a short walk away from extensive amenities the City Core has to offer.",JLL-07331,"<h2>Description</h2><p>The third floor is fully fitted and the second floor is undergoing a new refurbishment to provide a Landlord Cat B fit out to provide; <br />
+- A contemporary reception area<br />
+- 60 open plan desks and cabling<br />
+- 2 x 4 person meeting room  <br />
+- 2 x 6 person meeting room<br />
+- 1 x 10 person meeting room<br />
+- 2 meeting booths <br />
+- kitchenette <br />
+- 2 break out areas<br />
+- Comms room<br />
+<br />
+A new lease is available direct from the Landlord for a term to be agreed via negotiation.</p><h2>Viewings</h2><p>Strictly through the joint sole agents.</p>",18 St Swithin’s Lane occupies a prominent city core location and provides fully fitted 'plug & play' office space.,NULL,,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,69.5,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,london,20.38,sqft,estimated,12.12,sqft,excluding utilities,NULL,A new lease available direct from the Landlord,new,london-city,refurbished,a,2,,landlord,1,0,,11/18/22,"The third floor is fully fitted and the second floor is undergoing a new refurbishment to provide a Landlord Cat B fit out to provide; 
+- A contemporary reception area
+- 60 open plan desks and cabling
+- 2 x 4 person meeting room  
+- 2 x 6 person meeting room
+- 1 x 10 person meeting room
+- 2 meeting booths 
+- kitchenette 
+- 2 break out areas
+- Comms room
+
+A new lease is available direct from the Landlord for a term to be agreed via negotiation.",Strictly through the joint sole agents.,,,,Description,Viewings,,,0,0,0,NULL,freehold,NULL,,0,0,NULL,NULL,0,0,NULL,0,C,51,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Freehold,NULL,NULL,NULL,NULL,1.00023E+11,NULL,NULL,NULL,5/20/19,1000426085,,annum,,NULL,7331,MC2287-08385-HR.jpg,0,published,7/3/19 9:57,7/3/19 9:57,11,MC2287-08385-HR.jpg,cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/cead28b263f2901e747f16c5733995b6-letting6510.jpeg
+12754,08:32.0,45:56.0,Draft,Bow Bells House,NULL,164681,164681,nia,sqft,12112,12112,12112,12112,nia,sqft,NULL,available,1-11 Bread Street,NULL,EC4M 9BE,0,0,51.513333,-0.094655,15,90,NULL,NULL,JLL-12754,"<h2>Specification</h2><p>- Excellent Natural Light<br />
+- Multiple Extensive Roof Terraces<br />
+- High Quality Open Plan Fit Out<br />
+- Multiple Meeting Rooms<br />
+- Café Breakout With Terrace<br />
+- 2.7m Floor to Ceiling Height<br />
+- 2-Pipe Fan Coil Air-Conditioning<br />
+- Dual Entrance Reception<br />
+- 4 X 21 Person Lifts<br />
+- Cycle Storage and Showers<br />
+- Cat 6 cabling<br />
+- 2 Comms rooms</p>",Bow Bells House is a best in class building constructed in 2007 to the highest specification,NULL,,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,NULL,28.16,sqft,NULL,13.17,sqft,NULL,NULL,For a term to September 2024 Outside the Landlord and Tenant Act,sub-lease,london-city,NULL,b,NULL,Sublease till June 2024,tenant,0,0,,NULL,"- Excellent Natural Light
+- Multiple Extensive Roof Terraces
+- High Quality Open Plan Fit Out
+- Multiple Meeting Rooms
+- Café Breakout With Terrace
+- 2.7m Floor to Ceiling Height
+- 2-Pipe Fan Coil Air-Conditioning
+- Dual Entrance Reception
+- 4 X 21 Person Lifts
+- Cycle Storage and Showers
+- Cat 6 cabling
+- 2 Comms rooms",,,,,Specification,,,,0,0,0,NULL,NULL,NULL,,0,0,NULL,NULL,0,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,95510646,NULL,NULL,NULL,NULL,NULL,,annum,https://my.matterport.com/show/?m=sRf9gECfVjp,NULL,12754,Untitled.jpg,0,published,10/29/19 10:24,10/29/19 10:24,9,Untitled.jpg,4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/4dd5e85ab1dac14150311417e84ad1d1-letting39211.jpeg
+7343,53:12.0,31:25.0,Draft,Old Change House,NULL,60224,60224,nia,sqft,10743,10743,10743,10743,nia,sqft,NULL,available,128 Queen Victoria Street,NULL,EC4V 4BJ,0,0,51.511929,-0.097783,18,6.076739,12.603294,"The property is located near the north end of the Millennium Footbridge and enjoys access from all directions. Communications are excellent with St Pauls, Mansion House and Bank stations in nearby.",JLL-07343,"<h2>Description</h2><p>The entire second floor is available, the property comprises a mixed-use building of steel frame construction arranged over the basement and six upper floors.</p><h2>Specification</h2><p>• 4 pipe fan coil a/c plus new chillers<br />
+• LED lighting<br />
+• Raised floors<br />
+• 6 showers / 56 bike spaces/drying room<br />
+• 3 passenger lifts (1 goes to basement and is also fire fighting)<br />
+• EPC – C<br />
+• Wiredscore - Silver</p>",2nd floor available at Old Change House,NULL,,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,NULL,14.74,sqft,NULL,23.06,sqft,NULL,NULL,NULL,sub-lease,london-city,2nd-hand,a,2,lease unit October 2017,tenant,0,0,,NULL,"The entire second floor is available, the property comprises a mixed-use building of steel frame construction arranged over the basement and six upper floors.","• 4 pipe fan coil a/c plus new chillers
+• LED lighting
+• Raised floors
+• 6 showers / 56 bike spaces/drying room
+• 3 passenger lifts (1 goes to basement and is also fire fighting)
+• EPC – C
+• Wiredscore - Silver",,,,Description,Specification,,,0,0,0,NULL,freehold,NULL,,0,0,NULL,NULL,0,0,https://www.youtube.com/watch?v=t6VxTQeUIdQ&feature=youtu.be,0,C,62,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Freehold,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,,annum,,NULL,7343,1.jpg,0,published,3/1/21 13:43,3/1/21 13:44,7,1.jpg,26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/26954e92a10dbad129c031d7667d9f60-1.jpg
+13397,16:16.0,57:39.0,Draft,Harmsworth House,NULL,50078,50078,nia,sqft,4331,12331,4331,12331,nia,sqft,NULL,available,13-15 Bouverie Street,NULL,EC4Y 8DP,0,0,51.512805,-0.108002,15,270,NULL,"The property is located on the West side of Bouverie Street on the corner with Tudor Street and is within walking distance of some of<br />
+Central London’s most popular amenities including Covent Garden, Smithfield, One New Change, The Tate Modern and the Millennium<br />
+Bridge.<br />
+The building benefits from excellent transport links including Chancery Lane (Central Line), Blackfriars (Circle & District Line, Mainline) and<br />
+Farringdon (Metropolitan, Circle, Hammersmith & City, Thameslink, Mainline).",JLL-13397,"<h2>Specification</h2><p>- Fully Fitted & Furnished<br />
+- Air Conditioning<br />
+- Excellent Natural Light<br />
+- Full Access Raised Floor<br />
+- Bike Storage & Shower Facilities<br />
+- High Quality Reception<br />
+- High Speed Dedicated Fibre Line<br />
+- CAT5e Cabling throughout<br />
+-  </p>","The 2nd floor comprises some 10,478 sq ft of fully fitted and furnished offices with a current layout of 108 desks",NULL,,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,47.5,sqft,NULL,NULL,NULL,fullprice,NULL,NULL,NULL,13.52,sqft,NULL,10,sqft,NULL,NULL,"Alternatively an assignment of the existing lease is also available with a substantial reverse premium, subject to covenant. Landlord break notice is conditional upon a genuine intent to redevelop. If the option to determine the lease is not exercised a further 6 month rent free will be granted",assignment,london-city,2nd-hand,a,NULL,,landlord,0,0,,NULL,"- Fully Fitted & Furnished
+- Air Conditioning
+- Excellent Natural Light
+- Full Access Raised Floor
+- Bike Storage & Shower Facilities
+- High Quality Reception
+- High Speed Dedicated Fibre Line
+- CAT5e Cabling throughout
+-  ",,,,,Specification,,,,0,0,0,NULL,NULL,NULL,,0,0,NULL,NULL,0,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,sqft,NULL,1,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,10091779079,NULL,NULL,NULL,NULL,NULL,,annum,,NULL,13397,HARMSWORTH 1.jpg,0,published,10/8/18 15:37,10/8/18 15:37,3,HARMSWORTH 1.jpg,f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg,https://s3-eu-west-1.amazonaws.com/agents-society-assets/f55b636794a5d3f41861df9da1c4d58b-letting39833.jpeg

@@ -2,6 +2,25 @@ Rails.application.routes.draw do
 
 
 
+  # Routes for the Property resource:
+
+  # CREATE
+  post("/insert_property", { :controller => "properties", :action => "create" })
+          
+  # READ
+  get("/properties", { :controller => "properties", :action => "index" })
+  
+  get("/properties/:path_id", { :controller => "properties", :action => "show" })
+  
+  # UPDATE
+  
+  post("/modify_property/:path_id", { :controller => "properties", :action => "update" })
+  
+  # DELETE
+  get("/delete_property/:path_id", { :controller => "properties", :action => "destroy" })
+
+  #------------------------------
+
   # Routes for the Score resource:
 
   # CREATE

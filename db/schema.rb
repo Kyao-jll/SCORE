@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_08_024124) do
+ActiveRecord::Schema.define(version: 2022_12_08_025515) do
+
+  create_table "properties", force: :cascade do |t|
+    t.string "address1"
+    t.string "address2"
+    t.float "lat"
+    t.text "location_description"
+    t.float "lon"
+    t.string "meta_status"
+    t.string "postcode"
+    t.string "prop_name"
+    t.float "area_rent"
+    t.string "thumbnail"
+    t.float "size_sqft"
+    t.float "size_from_sqft"
+    t.float "size_to_sqft"
+    t.integer "meta_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "scores", force: :cascade do |t|
     t.integer "user_id"
