@@ -2,6 +2,25 @@ Rails.application.routes.draw do
 
 
 
+  # Routes for the Score resource:
+
+  # CREATE
+  post("/insert_score", { :controller => "scores", :action => "create" })
+          
+  # READ
+  get("/scores", { :controller => "scores", :action => "index" })
+  
+  get("/scores/:path_id", { :controller => "scores", :action => "show" })
+  
+  # UPDATE
+  
+  post("/modify_score/:path_id", { :controller => "scores", :action => "update" })
+  
+  # DELETE
+  get("/delete_score/:path_id", { :controller => "scores", :action => "destroy" })
+
+  #------------------------------
+
   # Routes for the User account:
 
   # SIGN UP FORM

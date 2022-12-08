@@ -1,0 +1,784 @@
+<div>
+  <div>
+    <h1>
+      List of all scores
+    </h1>
+  </div>
+</div>
+
+<hr>
+
+<div>
+  <div>
+    <h2>
+      Add a new score
+    </h2>
+
+    <form action="/insert_score" method="post">
+      <div>
+        <label for="user_id_box">
+          User
+        </label>
+
+        <input type="text" id="user_id_box" name="query_user_id">
+      </div>
+
+      <div>
+        <label for="prop_id_box">
+          Prop
+        </label>
+
+        <input type="text" id="prop_id_box" name="query_prop_id">
+      </div>
+
+      <div>
+        <input type="checkbox" id="thumb1_box" name="query_thumb1" value="1">
+
+        <label for="thumb1_box">Thumb1</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="thumb2_box" name="query_thumb2" value="1">
+
+        <label for="thumb2_box">Thumb2</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="thumb3_box" name="query_thumb3" value="1">
+
+        <label for="thumb3_box">Thumb3</label>
+      </div>
+
+      <div>
+        <label for="overeall_score_box">
+          Overeall score
+        </label>
+
+        <input type="text" id="overeall_score_box" name="query_overeall_score">
+      </div>
+
+      <div>
+        <label for="walking_distance_to_an_underground_station_box">
+          Walking distance to an underground station
+        </label>
+
+        <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station">
+      </div>
+
+      <div>
+        <label for="connectivity_to_several_tube_lines_box">
+          Connectivity to several tube lines
+        </label>
+
+        <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines">
+      </div>
+
+      <div>
+        <label for="access_to_major_airports_box">
+          Access to major airports
+        </label>
+
+        <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports">
+      </div>
+
+      <div>
+        <label for="gyms/personal_training/sports_venues_box">
+          Gyms/personal training/sports venues
+        </label>
+
+        <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues">
+      </div>
+
+      <div>
+        <label for="restaurants_box">
+          Restaurants
+        </label>
+
+        <input type="text" id="restaurants_box" name="query_restaurants">
+      </div>
+
+      <div>
+        <label for="bars_box">
+          Bars
+        </label>
+
+        <input type="text" id="bars_box" name="query_bars">
+      </div>
+
+      <div>
+        <label for="cafes_nearby_box">
+          Cafes nearby
+        </label>
+
+        <input type="text" id="cafes_nearby_box" name="query_cafes_nearby">
+      </div>
+
+      <div>
+        <label for="communal_roof_terraces_box">
+          Communal roof terraces
+        </label>
+
+        <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces">
+      </div>
+
+      <div>
+        <label for="private_roof_terraces_box">
+          Private roof terraces
+        </label>
+
+        <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces">
+      </div>
+
+      <div>
+        <label for="cycle_provisions_box">
+          Cycle provisions
+        </label>
+
+        <input type="text" id="cycle_provisions_box" name="query_cycle_provisions">
+      </div>
+
+      <div>
+        <label for="concierge_service_box">
+          Concierge service
+        </label>
+
+        <input type="text" id="concierge_service_box" name="query_concierge_service">
+      </div>
+
+      <div>
+        <label for="cafe_box">
+          Cafe
+        </label>
+
+        <input type="text" id="cafe_box" name="query_cafe">
+      </div>
+
+      <div>
+        <label for="dedicated_tenant_entrance_or_reception_desk_box">
+          Dedicated tenant entrance or reception desk
+        </label>
+
+        <input type="text" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk">
+      </div>
+
+      <div>
+        <label for="smart_building_infrastructure_box">
+          Smart building infrastructure
+        </label>
+
+        <input type="text" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure">
+      </div>
+
+      <div>
+        <label for="natural_light_box">
+          Natural light
+        </label>
+
+        <input type="text" id="natural_light_box" name="query_natural_light">
+      </div>
+
+      <div>
+        <label for="epc_box">
+          Epc
+        </label>
+
+        <input type="text" id="epc_box" name="query_epc">
+      </div>
+
+      <div>
+        <label for="breeam_box">
+          Breeam
+        </label>
+
+        <input type="text" id="breeam_box" name="query_breeam">
+      </div>
+
+      <div>
+        <label for="ability_to_expand_box">
+          Ability to expand
+        </label>
+
+        <input type="text" id="ability_to_expand_box" name="query_ability_to_expand">
+      </div>
+
+      <div>
+        <label for="ability_to_brand_building_box">
+          Ability to brand building
+        </label>
+
+        <input type="text" id="ability_to_brand_building_box" name="query_ability_to_brand_building">
+      </div>
+
+      <div>
+        <label for="proximity_to_clients_box">
+          Proximity to clients
+        </label>
+
+        <input type="text" id="proximity_to_clients_box" name="query_proximity_to_clients">
+      </div>
+
+      <div>
+        <label for="proximity_to_competitors_box">
+          Proximity to competitors
+        </label>
+
+        <input type="text" id="proximity_to_competitors_box" name="query_proximity_to_competitors">
+      </div>
+
+      <div>
+        <label for="specification_box">
+          Specification
+        </label>
+
+        <input type="text" id="specification_box" name="query_specification">
+      </div>
+
+      <div>
+        <label for="ability_to_influence_design_box">
+          Ability to influence design
+        </label>
+
+        <input type="text" id="ability_to_influence_design_box" name="query_ability_to_influence_design">
+      </div>
+
+      <div>
+        <label for="landlord_credibility_box">
+          Landlord credibility
+        </label>
+
+        <input type="text" id="landlord_credibility_box" name="query_landlord_credibility">
+      </div>
+
+      <div>
+        <label for="pc_date_box">
+          Pc date
+        </label>
+
+        <input type="text" id="pc_date_box" name="query_pc_date">
+      </div>
+
+      <div>
+        <label for="early_access_box">
+          Early access
+        </label>
+
+        <input type="text" id="early_access_box" name="query_early_access">
+      </div>
+
+      <div>
+        <label for="public_transport_connectivity_box">
+          Public transport connectivity
+        </label>
+
+        <input type="text" id="public_transport_connectivity_box" name="query_public_transport_connectivity">
+      </div>
+
+      <div>
+        <label for="private_transport_connectivity_box">
+          Private transport connectivity
+        </label>
+
+        <input type="text" id="private_transport_connectivity_box" name="query_private_transport_connectivity">
+      </div>
+
+      <div>
+        <label for="local_amenities_box">
+          Local amenities
+        </label>
+
+        <input type="text" id="local_amenities_box" name="query_local_amenities">
+      </div>
+
+      <div>
+        <label for="building_amenities_box">
+          Building amenities
+        </label>
+
+        <input type="text" id="building_amenities_box" name="query_building_amenities">
+      </div>
+
+      <div>
+        <label for="building_infrastructure_box">
+          Building infrastructure
+        </label>
+
+        <input type="text" id="building_infrastructure_box" name="query_building_infrastructure">
+      </div>
+
+      <div>
+        <label for="staff_impact_box">
+          Staff impact
+        </label>
+
+        <input type="text" id="staff_impact_box" name="query_staff_impact">
+      </div>
+
+      <div>
+        <label for="sustainability_wellness_box">
+          Sustainability wellness
+        </label>
+
+        <input type="text" id="sustainability_wellness_box" name="query_sustainability_wellness">
+      </div>
+
+      <div>
+        <label for="flexibility_box">
+          Flexibility
+        </label>
+
+        <input type="text" id="flexibility_box" name="query_flexibility">
+      </div>
+
+      <div>
+        <label for="image_brand_profile_box">
+          Image brand profile
+        </label>
+
+        <input type="text" id="image_brand_profile_box" name="query_image_brand_profile">
+      </div>
+
+      <div>
+        <label for="competitor_client_access_box">
+          Competitor client access
+        </label>
+
+        <input type="text" id="competitor_client_access_box" name="query_competitor_client_access">
+      </div>
+
+      <div>
+        <label for="deliverability_and_specification_box">
+          Deliverability and specification
+        </label>
+
+        <input type="text" id="deliverability_and_specification_box" name="query_deliverability_and_specification">
+      </div>
+
+      <div>
+        <label for="timing_box">
+          Timing
+        </label>
+
+        <input type="text" id="timing_box" name="query_timing">
+      </div>
+
+      <div>
+        <label for="comments_box">
+          Comments
+        </label>
+
+        <textarea id="comments_box" name="query_comments" rows="3"></textarea>
+      </div>
+
+      <button>
+        Create score
+      </button>
+    </form>
+  </div>
+</div>
+
+<hr>
+<div>
+  <div>
+    <table border="1">
+      <tr>
+        <th>
+          ID
+        </th>
+
+        <th>
+          User
+        </th>
+
+        <th>
+          Prop
+        </th>
+
+        <th>
+          Thumb1
+        </th>
+
+        <th>
+          Thumb2
+        </th>
+
+        <th>
+          Thumb3
+        </th>
+
+        <th>
+          Overeall score
+        </th>
+
+        <th>
+          Walking distance to an underground station
+        </th>
+
+        <th>
+          Connectivity to several tube lines
+        </th>
+
+        <th>
+          Access to major airports
+        </th>
+
+        <th>
+          Gyms/personal training/sports venues
+        </th>
+
+        <th>
+          Restaurants
+        </th>
+
+        <th>
+          Bars
+        </th>
+
+        <th>
+          Cafes nearby
+        </th>
+
+        <th>
+          Communal roof terraces
+        </th>
+
+        <th>
+          Private roof terraces
+        </th>
+
+        <th>
+          Cycle provisions
+        </th>
+
+        <th>
+          Concierge service
+        </th>
+
+        <th>
+          Cafe
+        </th>
+
+        <th>
+          Dedicated tenant entrance or reception desk
+        </th>
+
+        <th>
+          Smart building infrastructure
+        </th>
+
+        <th>
+          Natural light
+        </th>
+
+        <th>
+          Epc
+        </th>
+
+        <th>
+          Breeam
+        </th>
+
+        <th>
+          Ability to expand
+        </th>
+
+        <th>
+          Ability to brand building
+        </th>
+
+        <th>
+          Proximity to clients
+        </th>
+
+        <th>
+          Proximity to competitors
+        </th>
+
+        <th>
+          Specification
+        </th>
+
+        <th>
+          Ability to influence design
+        </th>
+
+        <th>
+          Landlord credibility
+        </th>
+
+        <th>
+          Pc date
+        </th>
+
+        <th>
+          Early access
+        </th>
+
+        <th>
+          Public transport connectivity
+        </th>
+
+        <th>
+          Private transport connectivity
+        </th>
+
+        <th>
+          Local amenities
+        </th>
+
+        <th>
+          Building amenities
+        </th>
+
+        <th>
+          Building infrastructure
+        </th>
+
+        <th>
+          Staff impact
+        </th>
+
+        <th>
+          Sustainability wellness
+        </th>
+
+        <th>
+          Flexibility
+        </th>
+
+        <th>
+          Image brand profile
+        </th>
+
+        <th>
+          Competitor client access
+        </th>
+
+        <th>
+          Deliverability and specification
+        </th>
+
+        <th>
+          Timing
+        </th>
+
+        <th>
+          Comments
+        </th>
+
+        <th>
+          Created at
+        </th>
+
+        <th>
+          Updated at
+        </th>
+
+        <th>
+        </th>
+      </tr>
+
+      <% @list_of_scores.each do |a_score| %>
+      <tr>
+        <td>
+          <%= a_score.id %>
+        </td>
+
+        <td>
+          <%= a_score.user_id %>
+        </td>
+
+        <td>
+          <%= a_score.prop_id %>
+        </td>
+
+        <td>
+          <%= a_score.thumb1 %>
+        </td>
+
+        <td>
+          <%= a_score.thumb2 %>
+        </td>
+
+        <td>
+          <%= a_score.thumb3 %>
+        </td>
+
+        <td>
+          <%= a_score.overeall_score %>
+        </td>
+
+        <td>
+          <%= a_score.walking_distance_to_an_underground_station %>
+        </td>
+
+        <td>
+          <%= a_score.connectivity_to_several_tube_lines %>
+        </td>
+
+        <td>
+          <%= a_score.access_to_major_airports %>
+        </td>
+
+        <td>
+          <%= a_score.gyms/personal_training/sports_venues %>
+        </td>
+
+        <td>
+          <%= a_score.restaurants %>
+        </td>
+
+        <td>
+          <%= a_score.bars %>
+        </td>
+
+        <td>
+          <%= a_score.cafes_nearby %>
+        </td>
+
+        <td>
+          <%= a_score.communal_roof_terraces %>
+        </td>
+
+        <td>
+          <%= a_score.private_roof_terraces %>
+        </td>
+
+        <td>
+          <%= a_score.cycle_provisions %>
+        </td>
+
+        <td>
+          <%= a_score.concierge_service %>
+        </td>
+
+        <td>
+          <%= a_score.cafe %>
+        </td>
+
+        <td>
+          <%= a_score.dedicated_tenant_entrance_or_reception_desk %>
+        </td>
+
+        <td>
+          <%= a_score.smart_building_infrastructure %>
+        </td>
+
+        <td>
+          <%= a_score.natural_light %>
+        </td>
+
+        <td>
+          <%= a_score.epc %>
+        </td>
+
+        <td>
+          <%= a_score.breeam %>
+        </td>
+
+        <td>
+          <%= a_score.ability_to_expand %>
+        </td>
+
+        <td>
+          <%= a_score.ability_to_brand_building %>
+        </td>
+
+        <td>
+          <%= a_score.proximity_to_clients %>
+        </td>
+
+        <td>
+          <%= a_score.proximity_to_competitors %>
+        </td>
+
+        <td>
+          <%= a_score.specification %>
+        </td>
+
+        <td>
+          <%= a_score.ability_to_influence_design %>
+        </td>
+
+        <td>
+          <%= a_score.landlord_credibility %>
+        </td>
+
+        <td>
+          <%= a_score.pc_date %>
+        </td>
+
+        <td>
+          <%= a_score.early_access %>
+        </td>
+
+        <td>
+          <%= a_score.public_transport_connectivity %>
+        </td>
+
+        <td>
+          <%= a_score.private_transport_connectivity %>
+        </td>
+
+        <td>
+          <%= a_score.local_amenities %>
+        </td>
+
+        <td>
+          <%= a_score.building_amenities %>
+        </td>
+
+        <td>
+          <%= a_score.building_infrastructure %>
+        </td>
+
+        <td>
+          <%= a_score.staff_impact %>
+        </td>
+
+        <td>
+          <%= a_score.sustainability_wellness %>
+        </td>
+
+        <td>
+          <%= a_score.flexibility %>
+        </td>
+
+        <td>
+          <%= a_score.image_brand_profile %>
+        </td>
+
+        <td>
+          <%= a_score.competitor_client_access %>
+        </td>
+
+        <td>
+          <%= a_score.deliverability_and_specification %>
+        </td>
+
+        <td>
+          <%= a_score.timing %>
+        </td>
+
+        <td>
+          <%= a_score.comments %>
+        </td>
+
+        <td>
+          <%= time_ago_in_words(a_score.created_at) %> ago
+        </td>
+        <td>
+          <%= time_ago_in_words(a_score.updated_at) %> ago
+        </td>
+
+        <td>
+          <a href="/scores/<%= a_score.id %>">
+            Show details
+          </a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+<hr>

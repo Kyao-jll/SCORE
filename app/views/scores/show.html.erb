@@ -1,0 +1,731 @@
+<div>
+  <div>
+    <h1>
+      Score #<%= @the_score.id %> details
+    </h1>
+
+    <div>
+      <div>
+        <a href="/scores">
+          Go back
+        </a>
+      </div>
+
+      <div>
+        <a href="/delete_score/<%= @the_score.id %>">
+          Delete score
+        </a>
+      </div>
+    </div>
+
+    <dl>
+      <dt>
+        User
+      </dt>
+      <dd>
+        <%= @the_score.user_id %>
+      </dd>
+
+      <dt>
+        Prop
+      </dt>
+      <dd>
+        <%= @the_score.prop_id %>
+      </dd>
+
+      <dt>
+        Thumb1
+      </dt>
+      <dd>
+        <%= @the_score.thumb1 %>
+      </dd>
+
+      <dt>
+        Thumb2
+      </dt>
+      <dd>
+        <%= @the_score.thumb2 %>
+      </dd>
+
+      <dt>
+        Thumb3
+      </dt>
+      <dd>
+        <%= @the_score.thumb3 %>
+      </dd>
+
+      <dt>
+        Overeall score
+      </dt>
+      <dd>
+        <%= @the_score.overeall_score %>
+      </dd>
+
+      <dt>
+        Walking distance to an underground station
+      </dt>
+      <dd>
+        <%= @the_score.walking_distance_to_an_underground_station %>
+      </dd>
+
+      <dt>
+        Connectivity to several tube lines
+      </dt>
+      <dd>
+        <%= @the_score.connectivity_to_several_tube_lines %>
+      </dd>
+
+      <dt>
+        Access to major airports
+      </dt>
+      <dd>
+        <%= @the_score.access_to_major_airports %>
+      </dd>
+
+      <dt>
+        Gyms/personal training/sports venues
+      </dt>
+      <dd>
+        <%= @the_score.gyms/personal_training/sports_venues %>
+      </dd>
+
+      <dt>
+        Restaurants
+      </dt>
+      <dd>
+        <%= @the_score.restaurants %>
+      </dd>
+
+      <dt>
+        Bars
+      </dt>
+      <dd>
+        <%= @the_score.bars %>
+      </dd>
+
+      <dt>
+        Cafes nearby
+      </dt>
+      <dd>
+        <%= @the_score.cafes_nearby %>
+      </dd>
+
+      <dt>
+        Communal roof terraces
+      </dt>
+      <dd>
+        <%= @the_score.communal_roof_terraces %>
+      </dd>
+
+      <dt>
+        Private roof terraces
+      </dt>
+      <dd>
+        <%= @the_score.private_roof_terraces %>
+      </dd>
+
+      <dt>
+        Cycle provisions
+      </dt>
+      <dd>
+        <%= @the_score.cycle_provisions %>
+      </dd>
+
+      <dt>
+        Concierge service
+      </dt>
+      <dd>
+        <%= @the_score.concierge_service %>
+      </dd>
+
+      <dt>
+        Cafe
+      </dt>
+      <dd>
+        <%= @the_score.cafe %>
+      </dd>
+
+      <dt>
+        Dedicated tenant entrance or reception desk
+      </dt>
+      <dd>
+        <%= @the_score.dedicated_tenant_entrance_or_reception_desk %>
+      </dd>
+
+      <dt>
+        Smart building infrastructure
+      </dt>
+      <dd>
+        <%= @the_score.smart_building_infrastructure %>
+      </dd>
+
+      <dt>
+        Natural light
+      </dt>
+      <dd>
+        <%= @the_score.natural_light %>
+      </dd>
+
+      <dt>
+        Epc
+      </dt>
+      <dd>
+        <%= @the_score.epc %>
+      </dd>
+
+      <dt>
+        Breeam
+      </dt>
+      <dd>
+        <%= @the_score.breeam %>
+      </dd>
+
+      <dt>
+        Ability to expand
+      </dt>
+      <dd>
+        <%= @the_score.ability_to_expand %>
+      </dd>
+
+      <dt>
+        Ability to brand building
+      </dt>
+      <dd>
+        <%= @the_score.ability_to_brand_building %>
+      </dd>
+
+      <dt>
+        Proximity to clients
+      </dt>
+      <dd>
+        <%= @the_score.proximity_to_clients %>
+      </dd>
+
+      <dt>
+        Proximity to competitors
+      </dt>
+      <dd>
+        <%= @the_score.proximity_to_competitors %>
+      </dd>
+
+      <dt>
+        Specification
+      </dt>
+      <dd>
+        <%= @the_score.specification %>
+      </dd>
+
+      <dt>
+        Ability to influence design
+      </dt>
+      <dd>
+        <%= @the_score.ability_to_influence_design %>
+      </dd>
+
+      <dt>
+        Landlord credibility
+      </dt>
+      <dd>
+        <%= @the_score.landlord_credibility %>
+      </dd>
+
+      <dt>
+        Pc date
+      </dt>
+      <dd>
+        <%= @the_score.pc_date %>
+      </dd>
+
+      <dt>
+        Early access
+      </dt>
+      <dd>
+        <%= @the_score.early_access %>
+      </dd>
+
+      <dt>
+        Public transport connectivity
+      </dt>
+      <dd>
+        <%= @the_score.public_transport_connectivity %>
+      </dd>
+
+      <dt>
+        Private transport connectivity
+      </dt>
+      <dd>
+        <%= @the_score.private_transport_connectivity %>
+      </dd>
+
+      <dt>
+        Local amenities
+      </dt>
+      <dd>
+        <%= @the_score.local_amenities %>
+      </dd>
+
+      <dt>
+        Building amenities
+      </dt>
+      <dd>
+        <%= @the_score.building_amenities %>
+      </dd>
+
+      <dt>
+        Building infrastructure
+      </dt>
+      <dd>
+        <%= @the_score.building_infrastructure %>
+      </dd>
+
+      <dt>
+        Staff impact
+      </dt>
+      <dd>
+        <%= @the_score.staff_impact %>
+      </dd>
+
+      <dt>
+        Sustainability wellness
+      </dt>
+      <dd>
+        <%= @the_score.sustainability_wellness %>
+      </dd>
+
+      <dt>
+        Flexibility
+      </dt>
+      <dd>
+        <%= @the_score.flexibility %>
+      </dd>
+
+      <dt>
+        Image brand profile
+      </dt>
+      <dd>
+        <%= @the_score.image_brand_profile %>
+      </dd>
+
+      <dt>
+        Competitor client access
+      </dt>
+      <dd>
+        <%= @the_score.competitor_client_access %>
+      </dd>
+
+      <dt>
+        Deliverability and specification
+      </dt>
+      <dd>
+        <%= @the_score.deliverability_and_specification %>
+      </dd>
+
+      <dt>
+        Timing
+      </dt>
+      <dd>
+        <%= @the_score.timing %>
+      </dd>
+
+      <dt>
+        Comments
+      </dt>
+      <dd>
+        <%= @the_score.comments %>
+      </dd>
+
+      <dt>
+        Created at
+      </dt>
+      <dd>
+        <%= time_ago_in_words(@the_score.created_at) %> ago
+      </dd>
+
+      <dt>
+        Updated at
+      </dt>
+      <dd>
+        <%= time_ago_in_words(@the_score.updated_at) %> ago
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<hr>
+
+
+<div>
+  <div>
+    <h2>
+      Edit score
+    </h2>
+
+    <form action="/modify_score/<%= @the_score.id %>"  method="post" >
+      <div>
+        <label for="user_id_box">
+          User
+        </label>
+
+        <input type="text" id="user_id_box" name="query_user_id" value="<%= @the_score.user_id %>">
+      </div>
+
+      <div>
+        <label for="prop_id_box">
+          Prop
+        </label>
+
+        <input type="text" id="prop_id_box" name="query_prop_id" value="<%= @the_score.prop_id %>">
+      </div>
+
+      <div>
+        <input type="checkbox" id="thumb1_box" name="query_thumb1" value="1" <%= "checked" if @the_score.thumb1 %>>
+
+        <label for="thumb1_box">
+            Thumb1
+        </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="thumb2_box" name="query_thumb2" value="1" <%= "checked" if @the_score.thumb2 %>>
+
+        <label for="thumb2_box">
+            Thumb2
+        </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="thumb3_box" name="query_thumb3" value="1" <%= "checked" if @the_score.thumb3 %>>
+
+        <label for="thumb3_box">
+            Thumb3
+        </label>
+      </div>
+
+      <div>
+        <label for="overeall_score_box">
+          Overeall score
+        </label>
+
+        <input type="text" id="overeall_score_box" name="query_overeall_score" value="<%= @the_score.overeall_score %>">
+      </div>
+
+      <div>
+        <label for="walking_distance_to_an_underground_station_box">
+          Walking distance to an underground station
+        </label>
+
+        <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station" value="<%= @the_score.walking_distance_to_an_underground_station %>">
+      </div>
+
+      <div>
+        <label for="connectivity_to_several_tube_lines_box">
+          Connectivity to several tube lines
+        </label>
+
+        <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines" value="<%= @the_score.connectivity_to_several_tube_lines %>">
+      </div>
+
+      <div>
+        <label for="access_to_major_airports_box">
+          Access to major airports
+        </label>
+
+        <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports" value="<%= @the_score.access_to_major_airports %>">
+      </div>
+
+      <div>
+        <label for="gyms/personal_training/sports_venues_box">
+          Gyms/personal training/sports venues
+        </label>
+
+        <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues" value="<%= @the_score.gyms/personal_training/sports_venues %>">
+      </div>
+
+      <div>
+        <label for="restaurants_box">
+          Restaurants
+        </label>
+
+        <input type="text" id="restaurants_box" name="query_restaurants" value="<%= @the_score.restaurants %>">
+      </div>
+
+      <div>
+        <label for="bars_box">
+          Bars
+        </label>
+
+        <input type="text" id="bars_box" name="query_bars" value="<%= @the_score.bars %>">
+      </div>
+
+      <div>
+        <label for="cafes_nearby_box">
+          Cafes nearby
+        </label>
+
+        <input type="text" id="cafes_nearby_box" name="query_cafes_nearby" value="<%= @the_score.cafes_nearby %>">
+      </div>
+
+      <div>
+        <label for="communal_roof_terraces_box">
+          Communal roof terraces
+        </label>
+
+        <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces" value="<%= @the_score.communal_roof_terraces %>">
+      </div>
+
+      <div>
+        <label for="private_roof_terraces_box">
+          Private roof terraces
+        </label>
+
+        <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces" value="<%= @the_score.private_roof_terraces %>">
+      </div>
+
+      <div>
+        <label for="cycle_provisions_box">
+          Cycle provisions
+        </label>
+
+        <input type="text" id="cycle_provisions_box" name="query_cycle_provisions" value="<%= @the_score.cycle_provisions %>">
+      </div>
+
+      <div>
+        <label for="concierge_service_box">
+          Concierge service
+        </label>
+
+        <input type="text" id="concierge_service_box" name="query_concierge_service" value="<%= @the_score.concierge_service %>">
+      </div>
+
+      <div>
+        <label for="cafe_box">
+          Cafe
+        </label>
+
+        <input type="text" id="cafe_box" name="query_cafe" value="<%= @the_score.cafe %>">
+      </div>
+
+      <div>
+        <label for="dedicated_tenant_entrance_or_reception_desk_box">
+          Dedicated tenant entrance or reception desk
+        </label>
+
+        <input type="text" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk" value="<%= @the_score.dedicated_tenant_entrance_or_reception_desk %>">
+      </div>
+
+      <div>
+        <label for="smart_building_infrastructure_box">
+          Smart building infrastructure
+        </label>
+
+        <input type="text" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure" value="<%= @the_score.smart_building_infrastructure %>">
+      </div>
+
+      <div>
+        <label for="natural_light_box">
+          Natural light
+        </label>
+
+        <input type="text" id="natural_light_box" name="query_natural_light" value="<%= @the_score.natural_light %>">
+      </div>
+
+      <div>
+        <label for="epc_box">
+          Epc
+        </label>
+
+        <input type="text" id="epc_box" name="query_epc" value="<%= @the_score.epc %>">
+      </div>
+
+      <div>
+        <label for="breeam_box">
+          Breeam
+        </label>
+
+        <input type="text" id="breeam_box" name="query_breeam" value="<%= @the_score.breeam %>">
+      </div>
+
+      <div>
+        <label for="ability_to_expand_box">
+          Ability to expand
+        </label>
+
+        <input type="text" id="ability_to_expand_box" name="query_ability_to_expand" value="<%= @the_score.ability_to_expand %>">
+      </div>
+
+      <div>
+        <label for="ability_to_brand_building_box">
+          Ability to brand building
+        </label>
+
+        <input type="text" id="ability_to_brand_building_box" name="query_ability_to_brand_building" value="<%= @the_score.ability_to_brand_building %>">
+      </div>
+
+      <div>
+        <label for="proximity_to_clients_box">
+          Proximity to clients
+        </label>
+
+        <input type="text" id="proximity_to_clients_box" name="query_proximity_to_clients" value="<%= @the_score.proximity_to_clients %>">
+      </div>
+
+      <div>
+        <label for="proximity_to_competitors_box">
+          Proximity to competitors
+        </label>
+
+        <input type="text" id="proximity_to_competitors_box" name="query_proximity_to_competitors" value="<%= @the_score.proximity_to_competitors %>">
+      </div>
+
+      <div>
+        <label for="specification_box">
+          Specification
+        </label>
+
+        <input type="text" id="specification_box" name="query_specification" value="<%= @the_score.specification %>">
+      </div>
+
+      <div>
+        <label for="ability_to_influence_design_box">
+          Ability to influence design
+        </label>
+
+        <input type="text" id="ability_to_influence_design_box" name="query_ability_to_influence_design" value="<%= @the_score.ability_to_influence_design %>">
+      </div>
+
+      <div>
+        <label for="landlord_credibility_box">
+          Landlord credibility
+        </label>
+
+        <input type="text" id="landlord_credibility_box" name="query_landlord_credibility" value="<%= @the_score.landlord_credibility %>">
+      </div>
+
+      <div>
+        <label for="pc_date_box">
+          Pc date
+        </label>
+
+        <input type="text" id="pc_date_box" name="query_pc_date" value="<%= @the_score.pc_date %>">
+      </div>
+
+      <div>
+        <label for="early_access_box">
+          Early access
+        </label>
+
+        <input type="text" id="early_access_box" name="query_early_access" value="<%= @the_score.early_access %>">
+      </div>
+
+      <div>
+        <label for="public_transport_connectivity_box">
+          Public transport connectivity
+        </label>
+
+        <input type="text" id="public_transport_connectivity_box" name="query_public_transport_connectivity" value="<%= @the_score.public_transport_connectivity %>">
+      </div>
+
+      <div>
+        <label for="private_transport_connectivity_box">
+          Private transport connectivity
+        </label>
+
+        <input type="text" id="private_transport_connectivity_box" name="query_private_transport_connectivity" value="<%= @the_score.private_transport_connectivity %>">
+      </div>
+
+      <div>
+        <label for="local_amenities_box">
+          Local amenities
+        </label>
+
+        <input type="text" id="local_amenities_box" name="query_local_amenities" value="<%= @the_score.local_amenities %>">
+      </div>
+
+      <div>
+        <label for="building_amenities_box">
+          Building amenities
+        </label>
+
+        <input type="text" id="building_amenities_box" name="query_building_amenities" value="<%= @the_score.building_amenities %>">
+      </div>
+
+      <div>
+        <label for="building_infrastructure_box">
+          Building infrastructure
+        </label>
+
+        <input type="text" id="building_infrastructure_box" name="query_building_infrastructure" value="<%= @the_score.building_infrastructure %>">
+      </div>
+
+      <div>
+        <label for="staff_impact_box">
+          Staff impact
+        </label>
+
+        <input type="text" id="staff_impact_box" name="query_staff_impact" value="<%= @the_score.staff_impact %>">
+      </div>
+
+      <div>
+        <label for="sustainability_wellness_box">
+          Sustainability wellness
+        </label>
+
+        <input type="text" id="sustainability_wellness_box" name="query_sustainability_wellness" value="<%= @the_score.sustainability_wellness %>">
+      </div>
+
+      <div>
+        <label for="flexibility_box">
+          Flexibility
+        </label>
+
+        <input type="text" id="flexibility_box" name="query_flexibility" value="<%= @the_score.flexibility %>">
+      </div>
+
+      <div>
+        <label for="image_brand_profile_box">
+          Image brand profile
+        </label>
+
+        <input type="text" id="image_brand_profile_box" name="query_image_brand_profile" value="<%= @the_score.image_brand_profile %>">
+      </div>
+
+      <div>
+        <label for="competitor_client_access_box">
+          Competitor client access
+        </label>
+
+        <input type="text" id="competitor_client_access_box" name="query_competitor_client_access" value="<%= @the_score.competitor_client_access %>">
+      </div>
+
+      <div>
+        <label for="deliverability_and_specification_box">
+          Deliverability and specification
+        </label>
+
+        <input type="text" id="deliverability_and_specification_box" name="query_deliverability_and_specification" value="<%= @the_score.deliverability_and_specification %>">
+      </div>
+
+      <div>
+        <label for="timing_box">
+          Timing
+        </label>
+
+        <input type="text" id="timing_box" name="query_timing" value="<%= @the_score.timing %>">
+      </div>
+
+      <div>
+        <label for="comments_box">
+          Comments
+        </label>
+
+        <textarea id="comments_box" name="query_comments"><%= @the_score.comments %></textarea>
+      </div>
+
+      <button>
+        Update score
+      </button>
+    </form>
+  </div>
+</div>
+
+<hr>
