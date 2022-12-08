@@ -52,4 +52,7 @@
 #  user_id                                     :integer
 #
 class Score < ApplicationRecord
+belongs_to :user
+belongs_to :property
+
 end

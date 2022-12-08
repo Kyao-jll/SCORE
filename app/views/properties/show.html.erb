@@ -1,266 +1,63 @@
+<h1>
+  <%= @the_property.prop_name %> details
+</h1>
+
 <div>
   <div>
-    <h1>
-      Property #<%= @the_property.id %> details
-    </h1>
+    <a href="/">
+      Go back
+    </a>
+  </div>
 
-    <div>
-      <div>
-        <a href="/properties">
-          Go back
-        </a>
-      </div>
+  <div>
+    <a href="/delete_property/<%= @the_property.id %>">
+      Delete property
+    </a>
+  </div>
+</div>
 
-      <div>
-        <a href="/delete_property/<%= @the_property.id %>">
-          Delete property
-        </a>
-      </div>
-    </div>
+<div>
+  <table border="1">
+    <tr>
+      <td rowspan="3">
+        <img height="100" width="100" src="<%= @the_property.thumbnail %>">
+      </td> 
 
-    <dl>
-      <dt>
-        Address1
-      </dt>
-      <dd>
-        <%= @the_property.address1 %>
-      </dd>
-
-      <dt>
-        Address2
-      </dt>
-      <dd>
-        <%= @the_property.address2 %>
-      </dd>
-
-      <dt>
-        Lat
-      </dt>
-      <dd>
-        <%= @the_property.lat %>
-      </dd>
-
-      <dt>
-        Location description
-      </dt>
-      <dd>
-        <%= @the_property.location_description %>
-      </dd>
-
-      <dt>
-        Lon
-      </dt>
-      <dd>
-        <%= @the_property.lon %>
-      </dd>
-
-      <dt>
-        Meta status
-      </dt>
-      <dd>
-        <%= @the_property.meta_status %>
-      </dd>
-
-      <dt>
-        Postcode
-      </dt>
-      <dd>
-        <%= @the_property.postcode %>
-      </dd>
-
-      <dt>
-        Prop name
-      </dt>
-      <dd>
+      <td>
         <%= @the_property.prop_name %>
-      </dd>
+      </td>
 
-      <dt>
-        Area rent
-      </dt>
-      <dd>
-        <%= @the_property.area_rent %>
-      </dd>
+      <td rowspan="2" colspan="3" width="100" style="text-align: center;">
+        0
+      </td>
 
-      <dt>
-        Thumbnail
-      </dt>
-      <dd>
-        <%= @the_property.thumbnail %>
-      </dd>
+      <tr>
+        <td>
+          <%= @the_property.location_description %>
+        </td>
+      </tr>
 
-      <dt>
-        Size sqft
-      </dt>
-      <dd>
-        <%= @the_property.size_sqft %>
-      </dd>
+      <tr>
+        <td>
+          <%= @the_property.size_sqft %>sq ft
+        </td>
 
-      <dt>
-        Size from sqft
-      </dt>
-      <dd>
-        <%= @the_property.size_from_sqft %>
-      </dd>
-
-      <dt>
-        Size to sqft
-      </dt>
-      <dd>
-        <%= @the_property.size_to_sqft %>
-      </dd>
-
-      <dt>
-        Meta
-      </dt>
-      <dd>
-        <%= @the_property.meta_id %>
-      </dd>
-
-      <dt>
-        Created at
-      </dt>
-      <dd>
-        <%= time_ago_in_words(@the_property.created_at) %> ago
-      </dd>
-
-      <dt>
-        Updated at
-      </dt>
-      <dd>
-        <%= time_ago_in_words(@the_property.updated_at) %> ago
-      </dd>
-    </dl>
-  </div>
-</div>
-
-<hr>
+        <td>
+          Thumb1 up
+        </td>
+        <td>
+          Thumb2 up
+        <td>
+          Thumb3 up 
+        </td>
+      </tr>
+    </tr>
+  </table> 
+</div>    
 
 
-<div>
-  <div>
-    <h2>
-      Edit property
-    </h2>
 
-    <form action="/modify_property/<%= @the_property.id %>"  method="post" >
-      <div>
-        <label for="address1_box">
-          Address1
-        </label>
 
-        <input type="text" id="address1_box" name="query_address1" value="<%= @the_property.address1 %>">
-      </div>
 
-      <div>
-        <label for="address2_box">
-          Address2
-        </label>
 
-        <input type="text" id="address2_box" name="query_address2" value="<%= @the_property.address2 %>">
-      </div>
-
-      <div>
-        <label for="lat_box">
-          Lat
-        </label>
-
-        <input type="text" id="lat_box" name="query_lat" value="<%= @the_property.lat %>">
-      </div>
-
-      <div>
-        <label for="location_description_box">
-          Location description
-        </label>
-
-        <textarea id="location_description_box" name="query_location_description"><%= @the_property.location_description %></textarea>
-      </div>
-
-      <div>
-        <label for="lon_box">
-          Lon
-        </label>
-
-        <input type="text" id="lon_box" name="query_lon" value="<%= @the_property.lon %>">
-      </div>
-
-      <div>
-        <label for="meta_status_box">
-          Meta status
-        </label>
-
-        <input type="text" id="meta_status_box" name="query_meta_status" value="<%= @the_property.meta_status %>">
-      </div>
-
-      <div>
-        <label for="postcode_box">
-          Postcode
-        </label>
-
-        <input type="text" id="postcode_box" name="query_postcode" value="<%= @the_property.postcode %>">
-      </div>
-
-      <div>
-        <label for="prop_name_box">
-          Prop name
-        </label>
-
-        <input type="text" id="prop_name_box" name="query_prop_name" value="<%= @the_property.prop_name %>">
-      </div>
-
-      <div>
-        <label for="area_rent_box">
-          Area rent
-        </label>
-
-        <input type="text" id="area_rent_box" name="query_area_rent" value="<%= @the_property.area_rent %>">
-      </div>
-
-      <div>
-        <label for="thumbnail_box">
-          Thumbnail
-        </label>
-
-        <input type="text" id="thumbnail_box" name="query_thumbnail" value="<%= @the_property.thumbnail %>">
-      </div>
-
-      <div>
-        <label for="size_sqft_box">
-          Size sqft
-        </label>
-
-        <input type="text" id="size_sqft_box" name="query_size_sqft" value="<%= @the_property.size_sqft %>">
-      </div>
-
-      <div>
-        <label for="size_from_sqft_box">
-          Size from sqft
-        </label>
-
-        <input type="text" id="size_from_sqft_box" name="query_size_from_sqft" value="<%= @the_property.size_from_sqft %>">
-      </div>
-
-      <div>
-        <label for="size_to_sqft_box">
-          Size to sqft
-        </label>
-
-        <input type="text" id="size_to_sqft_box" name="query_size_to_sqft" value="<%= @the_property.size_to_sqft %>">
-      </div>
-
-      <div>
-        <label for="meta_id_box">
-          Meta
-        </label>
-
-        <input type="text" id="meta_id_box" name="query_meta_id" value="<%= @the_property.meta_id %>">
-      </div>
-
-      <button>
-        Update property
-      </button>
-    </form>
-  </div>
-</div>
-
-<hr>
+    
