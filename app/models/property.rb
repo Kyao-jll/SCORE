@@ -21,4 +21,7 @@
 #  meta_id              :integer
 #
 class Property < ApplicationRecord
+  has_many :scores
+
+  has_many :rating, :through => :scores , :source => :user
 end

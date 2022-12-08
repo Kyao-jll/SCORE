@@ -6,7 +6,7 @@
       <% @list_of_properties.each do |a_property| %>
         <tr>
           <td rowspan="3">
-            <img height="100" width="100" src="<%= a_property.thumbnail %>">
+            <img height="250" width="250" src="<%= a_property.thumbnail %>">
           </td> 
 
           <td colspan="2">
@@ -16,7 +16,7 @@
           </td>
 
           <td rowspan="2" colspan="3">
-            Overall Score
+            Overall Score:<%=a_property.scores.first.overall_score%>
           </td> 
 
           <tr>
@@ -35,15 +35,15 @@
             </td>
 
             <td>
-              T1
+              <%=a_property.scores.first.thumb1%>
             </td>
 
             <td>
-              T2
+              <%=a_property.scores.first.thumb2%>
             </td>
 
             <td>
-              T3
+              <%=a_property.scores.first.thumb3%>
             </td>
 
 

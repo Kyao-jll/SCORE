@@ -49,8 +49,22 @@ class UserAuthenticationController < ApplicationController
 
     save_status = @user.save
 
+    
+
+
+
+
     if save_status == true
       session[:user_id] = @user.id
+
+      matching_properties = Property.all
+      matching_properties.each do |a_property|
+        the_score = Score.new
+        the_score.user_id = @user.id
+        the_score.property_id = a_property.id
+        the_score.save
+
+      end
    
       redirect_to("/", { :notice => "User account created successfully."})
     else

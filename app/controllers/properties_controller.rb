@@ -1,4 +1,12 @@
 class PropertiesController < ApplicationController
+
+  def analyze
+    matching_properties = Property.all
+
+    @list_of_properties = matching_properties.order({ :created_at => :desc })
+
+    render({ :template => "/bubbles.html.erb" })
+  end
   
   def user_index
     matching_properties = Property.all

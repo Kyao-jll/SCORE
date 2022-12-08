@@ -29,7 +29,7 @@
 #  landlord_credibility                        :float
 #  local_amenities                             :float
 #  natural_light                               :float
-#  overeall_score                              :float
+#  overall_score                               :float
 #  pc_date                                     :float
 #  private_roof_terraces                       :float
 #  private_transport_connectivity              :float
@@ -52,7 +52,6 @@
 #  user_id                                     :integer
 #
 class Score < ApplicationRecord
-belongs_to :user
-belongs_to :property
-
+  belongs_to :user
+  belongs_to :property
 end

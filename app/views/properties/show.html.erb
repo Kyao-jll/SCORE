@@ -1,14 +1,8 @@
-<h1>
-  <%= @the_property.prop_name %> details
-</h1>
-
-
 <div>
-<form action="/insert_score" method="post">
-  <table class="table table-bordered">
+<form action="/modify_score/<%= @the_property.scores.first.id %>"  method="post" >  <table class="table table-bordered">
   <tr>
     <td rowspan="3">
-      <img height="100" width="100" src="<%= @the_property.thumbnail %>">
+      <img height="400" width="400" src="<%= @the_property.thumbnail %>">
     </td> 
 
     <td colspan="2">
@@ -18,11 +12,7 @@
     </td>
 
     <td rowspan="2" colspan="3">
-      <label for="overeall_score_box">
-        Overeall score
-      </label>
-
-      <input type="text" id="overeall_score_box" name="query_overeall_score">
+      Overall Score: <%=@the_property.scores.first.overall_score%>
     </td> 
 
     <tr>
@@ -66,13 +56,11 @@
       </div>
 
 
-      <div>
-        <label for="overeall_score_box">
-          Overeall score
-        </label>
 
-        <input type="text" id="overeall_score_box" name="query_overeall_score">
-      </div>
+
+      <button>
+        Submit
+      </button>
 
 
 
@@ -81,7 +69,7 @@
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <label for="public_transport_connectivity_box">
-                Public transport connectivity
+                Public transport connectivity : <%=@the_property.scores.first.public_transport_connectivity%>
               </label>
               <!input type="text" id="public_transport_connectivity_box" name="query_public_transport_connectivity" >
 
@@ -111,7 +99,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Private Transport Connectivity
+              Private Transport Connectivity : <%=@the_property.scores.first.private_transport_connectivity%>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -129,7 +117,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Local Amenities
+              Local Amenities : <%=@the_property.scores.first.local_amenities%>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -172,7 +160,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Building Amenities
+              Building Amenities : <%=@the_property.scores.first.building_amenities%>
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -222,7 +210,7 @@
                   Dedicated tenant entrance or reception desk
                 </label>
 
-                <input type="text" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk">
+                <input type="number" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk">
               </div>
             </div>
           </div>
@@ -232,7 +220,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Building Infrastructure
+              Building Infrastructure : <%=@the_property.scores.first.building_infrastructure %>
             </button>
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
@@ -242,7 +230,7 @@
                   Smart building infrastructure
                 </label>
 
-                <input type="text" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure">
+                <input type="number" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure">
               </div>
             </div>
           </div>
@@ -252,7 +240,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Staff Impact
+              Staff Impact : <%=@the_property.scores.first.staff_impact%>
             </button>
           </h2>
           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -262,7 +250,7 @@
                   Natural light
                 </label>
 
-                <input type="text" id="natural_light_box" name="query_natural_light">
+                <input type="number" id="natural_light_box" name="query_natural_light">
               </div>
             </div>
           </div>
@@ -271,7 +259,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSeven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              Flexibility
+              Flexibility : <%=@the_property.scores.first.flexibility%>
             </button>
           </h2>
           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
@@ -281,7 +269,7 @@
                   Ability to expand
                 </label>
 
-                <input type="text" id="ability_to_expand_box" name="query_ability_to_expand">
+                <input type="number" id="ability_to_expand_box" name="query_ability_to_expand">
               </div>
             </div>
           </div>
@@ -290,7 +278,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-              Image/Brand/Profile
+              Image/Brand/Profile : <%=@the_property.scores.first.image_brand_profile%>
             </button>
           </h2>
           <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
@@ -300,7 +288,7 @@
                   Ability to brand building
                 </label>
 
-                <input type="text" id="ability_to_brand_building_box" name="query_ability_to_brand_building">
+                <input type="number" id="ability_to_brand_building_box" name="query_ability_to_brand_building">
               </div>
             </div>
           </div>
@@ -309,7 +297,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingNine">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              Competitor/Client Access
+              Competitor/Client Access : <%=@the_property.scores.first.competitor_client_access%>
             </button>
           </h2>
           <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
@@ -319,7 +307,7 @@
                   Proximity to clients
                 </label>
 
-                <input type="text" id="proximity_to_clients_box" name="query_proximity_to_clients">
+                <input type="number" id="proximity_to_clients_box" name="query_proximity_to_clients">
               </div>
 
               <div>
@@ -327,7 +315,7 @@
                   Proximity to competitors
                 </label>
 
-                <input type="text" id="proximity_to_competitors_box" name="query_proximity_to_competitors">
+                <input type="number" id="proximity_to_competitors_box" name="query_proximity_to_competitors">
               </div>
             </div>
           </div>
@@ -343,7 +331,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTen">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-              Sustainability/Wellness
+              Sustainability/Wellness : <%=@the_property.scores.first.sustainability_wellness%>
             </button>
           </h2>
           <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
@@ -354,7 +342,7 @@
                   Epc
                 </label>
 
-                <input type="text" id="epc_box" name="query_epc">
+                <input type="number" id="epc_box" name="query_epc">
               </div>
 
               <div>
@@ -362,7 +350,7 @@
                   Breeam
                 </label>
 
-                <input type="text" id="breeam_box" name="query_breeam">
+                <input type="number" id="breeam_box" name="query_breeam">
               </div>
             </div>
           </div>
@@ -373,7 +361,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingEleven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-              Deliverability and Specification
+              Deliverability and Specification : <%=@the_property.scores.first.deliverability_and_specification%>
             </button>
           </h2>
           <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
@@ -383,7 +371,7 @@
                   Specification
                 </label>
 
-                <input type="text" id="specification_box" name="query_specification">
+                <input type="number" id="specification_box" name="query_specification">
               </div>
 
               <div>
@@ -391,7 +379,7 @@
                   Ability to influence design
                 </label>
 
-                <input type="text" id="ability_to_influence_design_box" name="query_ability_to_influence_design">
+                <input type="number" id="ability_to_influence_design_box" name="query_ability_to_influence_design">
               </div>
 
               <div>
@@ -399,7 +387,7 @@
                   Landlord credibility
                 </label>
 
-                <input type="text" id="landlord_credibility_box" name="query_landlord_credibility">
+                <input type="number" id="landlord_credibility_box" name="query_landlord_credibility">
               </div>
             </div>
           </div>
@@ -408,7 +396,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwelve">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-              Local Amenities
+              Timing : <%=@the_property.scores.first.timing%>
             </button>
           </h2>
           <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
@@ -418,7 +406,7 @@
                   Pc date
                 </label>
 
-                <input type="text" id="pc_date_box" name="query_pc_date">
+                <input type="number" id="pc_date_box" name="query_pc_date">
               </div>
 
               <div>
@@ -426,7 +414,7 @@
                   Early access
                 </label>
 
-                <input type="text" id="early_access_box" name="query_early_access">
+                <input type="number" id="early_access_box" name="query_early_access">
               </div>
             </div>
           </div>
@@ -444,9 +432,7 @@
 
       
 
-      <button>
-        Create score
-      </button>
+
     </form>
   </div>
 </div>

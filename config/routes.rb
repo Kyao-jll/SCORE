@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get("/", { :controller => "properties", :action => "user_index" })
-
+  get("/analyze", { :controller => "properties", :action => "analyze" })
 
   # Routes for the Property resource:
 
