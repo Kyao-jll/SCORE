@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get("/", { :controller => "properties", :action => "user_index" })
 
 
   # Routes for the Property resource:

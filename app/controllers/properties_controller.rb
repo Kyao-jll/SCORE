@@ -1,4 +1,13 @@
 class PropertiesController < ApplicationController
+  
+  def user_index
+    matching_properties = Property.all
+
+    @list_of_properties = matching_properties.order({ :created_at => :desc })
+
+    render({ :template => "properties/user_index.html.erb" })
+  end
+  
   def index
     matching_properties = Property.all
 

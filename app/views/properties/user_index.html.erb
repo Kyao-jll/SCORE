@@ -1,0 +1,59 @@
+<h1><%= @current_user.company %></h1>
+
+<div>
+    <table border="1">
+
+      <% @list_of_properties.each do |a_property| %>
+        <tr>
+          <td rowspan="3">
+            <img height="100" width="100" src="<%= a_property.thumbnail %>">
+          </td> 
+
+          <td colspan="2">
+            <a href="/properties/<%= a_property.id %>">
+              <%= a_property.prop_name %>
+            </a>
+          </td>
+
+          <td rowspan="2" colspan="3">
+            Overall Score
+          </td> 
+
+          <tr>
+            <td colspan="2">
+              <%= a_property.location_description %>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              From $<%= a_property.area_rent %>
+            </td>
+            <td>
+              <%= a_property.size_sqft %> - <%= a_property.size_sqft %> sq ft
+            </td>
+
+            <td>
+              T1
+            </td>
+
+            <td>
+              T2
+            </td>
+
+            <td>
+              T3
+            </td>
+
+
+          </tr>
+
+          
+
+
+        </tr>
+
+      <% end %>
+    </table>
+</div>
