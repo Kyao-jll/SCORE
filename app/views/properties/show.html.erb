@@ -2,62 +2,598 @@
   <%= @the_property.prop_name %> details
 </h1>
 
-<div>
-  <div>
-    <a href="/">
-      Go back
-    </a>
-  </div>
-
-  <div>
-    <a href="/delete_property/<%= @the_property.id %>">
-      Delete property
-    </a>
-  </div>
-</div>
 
 <div>
+<form action="/insert_score" method="post">
   <table border="1">
+  <tr>
+    <td rowspan="3">
+      <img height="100" width="100" src="<%= @the_property.thumbnail %>">
+    </td> 
+
+    <td colspan="2">
+      <a href="/properties/<%= @the_property.id %>">
+        <%= @the_property.prop_name %>
+      </a>
+    </td>
+
+    <td rowspan="2" colspan="3">
+      <label for="overeall_score_box">
+        Overeall score
+      </label>
+
+      <input type="text" id="overeall_score_box" name="query_overeall_score">
+    </td> 
+
     <tr>
-      <td rowspan="3">
-        <img height="100" width="100" src="<%= @the_property.thumbnail %>">
-      </td> 
+      <td colspan="2">
+        <%= @the_property.location_description %>
+      </td>
+
+    </tr>
+
+    <tr>
+      <td>
+        From $<%= @the_property.area_rent %>
+      </td>
+      <td>
+        <%= @the_property.size_sqft %> - <%= @the_property.size_sqft %> sq ft
+      </td>
+    
 
       <td>
-        <%= @the_property.prop_name %>
+        <input type="checkbox" id="thumb1_box" name="query_thumb1" value=true>
+
+        <label for="thumb1_box">Thumb Up</label>
       </td>
+      <td>
+        <input type="checkbox" id="thumb2_box" name="query_thumb2" value=true>
 
-      <td rowspan="2" colspan="3" width="100" style="text-align: center;">
-        0
+        <label for="thumb2_box">Thumb Up</label>
+      <td>
+        <input type="checkbox" id="thumb3_box" name="query_thumb3" value=true>
+
+        <label for="thumb3_box">Thumb Up</label> 
       </td>
-
-      <tr>
-        <td>
-          <%= @the_property.location_description %>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <%= @the_property.size_sqft %>sq ft
-        </td>
-
-        <td>
-          Thumb1 up
-        </td>
-        <td>
-          Thumb2 up
-        <td>
-          Thumb3 up 
-        </td>
-      </tr>
     </tr>
   </table> 
 </div>    
 
 
+      <div>
+        <input type="hidden" id="user_id_box" name="query_user_id" value="<%= @current_user.id%>">
+        <input type="hidden" id="prop_id_box" name="query_prop_id" value="<%= @the_property.id %>">
+      </div>
+
+
+      <div>
+        <label for="overeall_score_box">
+          Overeall score
+        </label>
+
+        <input type="text" id="overeall_score_box" name="query_overeall_score">
+      </div>
+
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <label for="public_transport_connectivity_box">
+                Public transport connectivity
+              </label>
+              <!input type="text" id="public_transport_connectivity_box" name="query_public_transport_connectivity" >
+
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <label for="walking_distance_to_an_underground_station_box">
+                  Walking distance to an underground station
+                </label>
+
+                <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station">
+              </div>
+
+              <div>
+                <label for="connectivity_to_several_tube_lines_box">
+                  Connectivity to several tube lines
+                </label>
+
+                <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Private Transport Connectivity
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <label for="access_to_major_airports_box">
+                  Access to major airports
+                </label>
+                <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <label for="gyms/personal_training/sports_venues_box">
+                  Gyms/personal training/sports venues
+                </label>
+
+                <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues">
+              </div>
+
+              <div>
+                <label for="restaurants_box">
+                  Restaurants
+                </label>
+
+                <input type="text" id="restaurants_box" name="query_restaurants">
+              </div>
+
+              <div>
+                <label for="bars_box">
+                  Bars
+                </label>
+
+                <input type="text" id="bars_box" name="query_bars">
+              </div>
+
+              <div>
+                <label for="cafes_nearby_box">
+                  Cafes nearby
+                </label>
+
+                <input type="text" id="cafes_nearby_box" name="query_cafes_nearby">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Building Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <label for="communal_roof_terraces_box">
+                  Communal roof terraces
+                </label>
+
+                <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces">
+              </div>
+
+              <div>
+                <label for="private_roof_terraces_box">
+                  Private roof terraces
+                </label>
+
+                <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces">
+              </div>
+
+              <div>
+                <label for="cycle_provisions_box">
+                  Cycle provisions
+                </label>
+
+                <input type="text" id="cycle_provisions_box" name="query_cycle_provisions">
+              </div>
+
+              <div>
+                <label for="concierge_service_box">
+                  Concierge service
+                </label>
+
+                <input type="text" id="concierge_service_box" name="query_concierge_service">
+              </div>
+
+              <div>
+                <label for="cafe_box">
+                  Cafe
+                </label>
+
+                <input type="text" id="cafe_box" name="query_cafe">
+              </div>
+
+              <div>
+                <label for="dedicated_tenant_entrance_or_reception_desk_box">
+                  Dedicated tenant entrance or reception desk
+                </label>
+
+                <input type="text" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseheadingFive" aria-expanded="false" aria-controls="collapseheadingFive">
+              Building Infrastructure
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <label for="smart_building_infrastructure_box">
+                  Smart building infrastructure
+                </label>
+
+                <input type="text" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Staff Impact
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                    <div>
+                <label for="natural_light_box">
+                  Natural light
+                </label>
+
+                <input type="text" id="natural_light_box" name="query_natural_light">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Flexibility
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Image/Brand/Profile
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Sustainability/Wellness
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <label for="epc_box">
+                  Epc
+                </label>
+
+                <input type="text" id="epc_box" name="query_epc">
+              </div>
+
+              <div>
+                <label for="breeam_box">
+                  Breeam
+                </label>
+
+                <input type="text" id="breeam_box" name="query_breeam">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Local Amenities
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+     
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      
+
+
+      
+
+      <div>
+        <label for="ability_to_expand_box">
+          Ability to expand
+        </label>
+
+        <input type="text" id="ability_to_expand_box" name="query_ability_to_expand">
+      </div>
+
+      <div>
+        <label for="ability_to_brand_building_box">
+          Ability to brand building
+        </label>
+
+        <input type="text" id="ability_to_brand_building_box" name="query_ability_to_brand_building">
+      </div>
+
+      <div>
+        <label for="proximity_to_clients_box">
+          Proximity to clients
+        </label>
+
+        <input type="text" id="proximity_to_clients_box" name="query_proximity_to_clients">
+      </div>
+
+      <div>
+        <label for="proximity_to_competitors_box">
+          Proximity to competitors
+        </label>
+
+        <input type="text" id="proximity_to_competitors_box" name="query_proximity_to_competitors">
+      </div>
+
+      <div>
+        <label for="specification_box">
+          Specification
+        </label>
+
+        <input type="text" id="specification_box" name="query_specification">
+      </div>
+
+      <div>
+        <label for="ability_to_influence_design_box">
+          Ability to influence design
+        </label>
+
+        <input type="text" id="ability_to_influence_design_box" name="query_ability_to_influence_design">
+      </div>
+
+      <div>
+        <label for="landlord_credibility_box">
+          Landlord credibility
+        </label>
+
+        <input type="text" id="landlord_credibility_box" name="query_landlord_credibility">
+      </div>
+
+      <div>
+        <label for="pc_date_box">
+          Pc date
+        </label>
+
+        <input type="text" id="pc_date_box" name="query_pc_date">
+      </div>
+
+      <div>
+        <label for="early_access_box">
+          Early access
+        </label>
+
+        <input type="text" id="early_access_box" name="query_early_access">
+      </div>
+
+      
+
+      <div>
+        <label for="private_transport_connectivity_box">
+          Private transport connectivity
+        </label>
+
+        <input type="text" id="private_transport_connectivity_box" name="query_private_transport_connectivity">
+      </div>
+
+      <div>
+        <label for="local_amenities_box">
+          Local amenities
+        </label>
+
+        <input type="text" id="local_amenities_box" name="query_local_amenities">
+      </div>
+
+      <div>
+        <label for="building_amenities_box">
+          Building amenities
+        </label>
+
+        <input type="text" id="building_amenities_box" name="query_building_amenities">
+      </div>
+
+      <div>
+        <label for="building_infrastructure_box">
+          Building infrastructure
+        </label>
+
+        <input type="text" id="building_infrastructure_box" name="query_building_infrastructure">
+      </div>
+
+      <div>
+        <label for="staff_impact_box">
+          Staff impact
+        </label>
+
+        <input type="text" id="staff_impact_box" name="query_staff_impact">
+      </div>
+
+      <div>
+        <label for="sustainability_wellness_box">
+          Sustainability wellness
+        </label>
+
+        <input type="text" id="sustainability_wellness_box" name="query_sustainability_wellness">
+      </div>
+
+      <div>
+        <label for="flexibility_box">
+          Flexibility
+        </label>
+
+        <input type="text" id="flexibility_box" name="query_flexibility">
+      </div>
+
+      <div>
+        <label for="image_brand_profile_box">
+          Image brand profile
+        </label>
+
+        <input type="text" id="image_brand_profile_box" name="query_image_brand_profile">
+      </div>
+
+      <div>
+        <label for="competitor_client_access_box">
+          Competitor client access
+        </label>
+
+        <input type="text" id="competitor_client_access_box" name="query_competitor_client_access">
+      </div>
+
+      <div>
+        <label for="deliverability_and_specification_box">
+          Deliverability and specification
+        </label>
+
+        <input type="text" id="deliverability_and_specification_box" name="query_deliverability_and_specification">
+      </div>
+
+      <div>
+        <label for="timing_box">
+          Timing
+        </label>
+
+        <input type="text" id="timing_box" name="query_timing">
+      </div>
+
+      <div>
+        <label for="comments_box">
+          Comments
+        </label>
+
+        <textarea id="comments_box" name="query_comments" rows="3"></textarea>
+      </div>
+
+      
+
+      <button>
+        Create score
+      </button>
+    </form>
+  </div>
+</div>

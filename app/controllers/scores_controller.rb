@@ -28,7 +28,7 @@ class ScoresController < ApplicationController
     the_score.walking_distance_to_an_underground_station = params.fetch("query_walking_distance_to_an_underground_station")
     the_score.connectivity_to_several_tube_lines = params.fetch("query_connectivity_to_several_tube_lines")
     the_score.access_to_major_airports = params.fetch("query_access_to_major_airports")
-    the_score.gyms/personal_training/sports_venues = params.fetch("query_gyms/personal_training/sports_venues")
+    the_score.gyms_personal_training_sports_venues = params.fetch("query_gyms/personal_training/sports_venues")
     the_score.restaurants = params.fetch("query_restaurants")
     the_score.bars = params.fetch("query_bars")
     the_score.cafes_nearby = params.fetch("query_cafes_nearby")
