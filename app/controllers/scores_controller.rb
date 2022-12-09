@@ -161,7 +161,7 @@ class ScoresController < ApplicationController
 
     if the_score.valid?
       the_score.save
-      redirect_to("/properties/#{the_score.property_id}", { :notice => "Score updated successfully." })
+      redirect_to("/", { :notice => "Score updated successfully." })
 
     else
       redirect_to("/scores/#{the_score.id}", { :alert => the_score.errors.full_messages.to_sentence })

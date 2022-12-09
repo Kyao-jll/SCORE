@@ -32,17 +32,28 @@
     
 
       <td>
-        <input type="checkbox" id="thumb1_box" name="query_thumb1" value=true>
-
+        <% if @the_property.scores.first.thumb1 == true %>
+          <input type="checkbox" checked = "checked" id="thumb1_box" name="query_thumb1" value= true>
+        <% else %>
+          <input type="checkbox" id="thumb1_box" name="query_thumb1" value= true>
+        <% end%>
         <label for="thumb1_box">Thumb Up</label>
       </td>
+
       <td>
-        <input type="checkbox" id="thumb2_box" name="query_thumb2" value=true>
+        <% if @the_property.scores.first.thumb1 == true %>
+          <input type="checkbox" checked = "checked" id="thumb2_box" name="query_thumb2" value= true>
+        <% else %>
+          <input type="checkbox" id="thumb2_box" name="query_thumb2" value= true>
+        <% end%>
 
         <label for="thumb2_box">Thumb Up</label>
       <td>
-        <input type="checkbox" id="thumb3_box" name="query_thumb3" value=true>
-
+        <% if @the_property.scores.first.thumb1 == true %>
+          <input type="checkbox" checked = "checked" id="thumb3_box" name="query_thumb3" value= true>
+        <% else %>
+          <input type="checkbox" id="thumb3_box" name="query_thumb3" value= true>
+        <% end%>
         <label for="thumb3_box">Thumb Up</label> 
       </td>
     </tr>
@@ -71,7 +82,6 @@
               <label for="public_transport_connectivity_box">
                 Public transport connectivity : <%=@the_property.scores.first.public_transport_connectivity%>
               </label>
-              <!input type="text" id="public_transport_connectivity_box" name="query_public_transport_connectivity" >
 
             </button>
           </h2>
@@ -82,7 +92,7 @@
                   Walking distance to an underground station
                 </label>
 
-                <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station">
+                <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station" value="<%=@the_property.scores.first.walking_distance_to_an_underground_station%>">
               </div>
 
               <div>
@@ -90,7 +100,7 @@
                   Connectivity to several tube lines
                 </label>
 
-                <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines">
+                <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines" value="<%=@the_property.scores.first.connectivity_to_several_tube_lines%>">
               </div>
             </div>
           </div>
@@ -108,7 +118,7 @@
                 <label for="access_to_major_airports_box">
                   Access to major airports
                 </label>
-                <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports">
+                <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports" value="<%=@the_property.scores.first.access_to_major_airports%>">
               </div>
             </div>
           </div>
@@ -127,7 +137,7 @@
                   Gyms/personal training/sports venues
                 </label>
 
-                <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues">
+                <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues" value="<%=@the_property.scores.first.gyms_personal_training_sports_venues%>">
               </div>
 
               <div>
@@ -135,7 +145,7 @@
                   Restaurants
                 </label>
 
-                <input type="text" id="restaurants_box" name="query_restaurants">
+                <input type="text" id="restaurants_box" name="query_restaurants" value="<%=@the_property.scores.first.restaurants%>">
               </div>
 
               <div>
@@ -143,7 +153,7 @@
                   Bars
                 </label>
 
-                <input type="text" id="bars_box" name="query_bars">
+                <input type="text" id="bars_box" name="query_bars" value="<%=@the_property.scores.first.bars%>">
               </div>
 
               <div>
@@ -151,7 +161,7 @@
                   Cafes nearby
                 </label>
 
-                <input type="text" id="cafes_nearby_box" name="query_cafes_nearby">
+                <input type="text" id="cafes_nearby_box" name="query_cafes_nearby" value="<%=@the_property.scores.first.cafes_nearby%>">
               </div>
             </div>
           </div>
@@ -170,7 +180,7 @@
                   Communal roof terraces
                 </label>
 
-                <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces">
+                <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces" value="<%=@the_property.scores.first.communal_roof_terraces%>">
               </div>
 
               <div>
@@ -178,7 +188,7 @@
                   Private roof terraces
                 </label>
 
-                <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces">
+                <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces" value="<%=@the_property.scores.first.private_roof_terraces%>">
               </div>
 
               <div>
@@ -186,7 +196,7 @@
                   Cycle provisions
                 </label>
 
-                <input type="text" id="cycle_provisions_box" name="query_cycle_provisions">
+                <input type="text" id="cycle_provisions_box" name="query_cycle_provisions" value="<%=@the_property.scores.first.cycle_provisions%>">
               </div>
 
               <div>
@@ -194,7 +204,7 @@
                   Concierge service
                 </label>
 
-                <input type="text" id="concierge_service_box" name="query_concierge_service">
+                <input type="text" id="concierge_service_box" name="query_concierge_service" value="<%=@the_property.scores.first.concierge_service%>">
               </div>
 
               <div>
@@ -202,7 +212,7 @@
                   Cafe
                 </label>
 
-                <input type="text" id="cafe_box" name="query_cafe">
+                <input type="text" id="cafe_box" name="query_cafe" value="<%=@the_property.scores.first.cafe%>">
               </div>
 
               <div>
@@ -210,7 +220,7 @@
                   Dedicated tenant entrance or reception desk
                 </label>
 
-                <input type="number" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk">
+                <input type="number" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk" value="<%=@the_property.scores.first.dedicated_tenant_entrance_or_reception_desk%>">
               </div>
             </div>
           </div>
@@ -230,7 +240,7 @@
                   Smart building infrastructure
                 </label>
 
-                <input type="number" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure">
+                <input type="number" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure" value="<%=@the_property.scores.first.smart_building_infrastructure%>">
               </div>
             </div>
           </div>
@@ -250,7 +260,7 @@
                   Natural light
                 </label>
 
-                <input type="number" id="natural_light_box" name="query_natural_light">
+                <input type="number" id="natural_light_box" name="query_natural_light" value="<%=@the_property.scores.first.natural_light%>">
               </div>
             </div>
           </div>
@@ -269,7 +279,7 @@
                   Ability to expand
                 </label>
 
-                <input type="number" id="ability_to_expand_box" name="query_ability_to_expand">
+                <input type="number" id="ability_to_expand_box" name="query_ability_to_expand" value="<%=@the_property.scores.first.ability_to_expand%>">
               </div>
             </div>
           </div>
@@ -288,7 +298,7 @@
                   Ability to brand building
                 </label>
 
-                <input type="number" id="ability_to_brand_building_box" name="query_ability_to_brand_building">
+                <input type="number" id="ability_to_brand_building_box" name="query_ability_to_brand_building" value="<%=@the_property.scores.first.ability_to_brand_building%>">
               </div>
             </div>
           </div>
@@ -307,7 +317,7 @@
                   Proximity to clients
                 </label>
 
-                <input type="number" id="proximity_to_clients_box" name="query_proximity_to_clients">
+                <input type="number" id="proximity_to_clients_box" name="query_proximity_to_clients" value="<%=@the_property.scores.first.proximity_to_clients%>">
               </div>
 
               <div>
@@ -315,7 +325,7 @@
                   Proximity to competitors
                 </label>
 
-                <input type="number" id="proximity_to_competitors_box" name="query_proximity_to_competitors">
+                <input type="number" id="proximity_to_competitors_box" name="query_proximity_to_competitors" value="<%=@the_property.scores.first.proximity_to_competitors%>">
               </div>
             </div>
           </div>
@@ -342,7 +352,7 @@
                   Epc
                 </label>
 
-                <input type="number" id="epc_box" name="query_epc">
+                <input type="number" id="epc_box" name="query_epc" value="<%=@the_property.scores.first.epc%>">
               </div>
 
               <div>
@@ -350,7 +360,7 @@
                   Breeam
                 </label>
 
-                <input type="number" id="breeam_box" name="query_breeam">
+                <input type="number" id="breeam_box" name="query_breeam" value="<%=@the_property.scores.first.breeam%>">
               </div>
             </div>
           </div>
@@ -371,7 +381,7 @@
                   Specification
                 </label>
 
-                <input type="number" id="specification_box" name="query_specification">
+                <input type="number" id="specification_box" name="query_specification" value="<%=@the_property.scores.first.specification%>">
               </div>
 
               <div>
@@ -379,7 +389,7 @@
                   Ability to influence design
                 </label>
 
-                <input type="number" id="ability_to_influence_design_box" name="query_ability_to_influence_design">
+                <input type="number" id="ability_to_influence_design_box" name="query_ability_to_influence_design" value="<%=@the_property.scores.first.ability_to_influence_design%>">
               </div>
 
               <div>
@@ -387,7 +397,7 @@
                   Landlord credibility
                 </label>
 
-                <input type="number" id="landlord_credibility_box" name="query_landlord_credibility">
+                <input type="number" id="landlord_credibility_box" name="query_landlord_credibility" value="<%=@the_property.scores.first.landlord_credibility%>">
               </div>
             </div>
           </div>
@@ -406,7 +416,7 @@
                   Pc date
                 </label>
 
-                <input type="number" id="pc_date_box" name="query_pc_date">
+                <input type="number" id="pc_date_box" name="query_pc_date" value="<%=@the_property.scores.first.pc_date%>">
               </div>
 
               <div>
@@ -414,7 +424,7 @@
                   Early access
                 </label>
 
-                <input type="number" id="early_access_box" name="query_early_access">
+                <input type="number" id="early_access_box" name="query_early_access" value="<%=@the_property.scores.first.early_access%>">
               </div>
             </div>
           </div>

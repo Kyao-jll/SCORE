@@ -1,3 +1,8 @@
+<style>
+h1 {
+  text-align: center;
+}
+</style>
 <h1><%= @current_user.company %></h1>
 
 <div>
@@ -35,15 +40,27 @@
             </td>
 
             <td>
-              <%=a_property.scores.first.thumb1%>
+              <% if a_property.scores.first.thumb1 == true %>
+                <img src="/Thumb_Up.png">
+              <% else %>
+                <img src="/Thumb.png">
+              <% end %>
             </td>
 
             <td>
-              <%=a_property.scores.first.thumb2%>
+              <% if a_property.scores.first.thumb2 == true %>
+                <img src="/Thumb_Up.png">
+              <% else %>
+                <img src="/Thumb.png">
+              <% end %>
             </td>
 
             <td>
-              <%=a_property.scores.first.thumb3%>
+              <% if a_property.scores.first.thumb3 == true %>
+                <img src="/Thumb_Up.png">
+              <% else %>
+                <img src="/Thumb.png">
+              <% end %>
             </td>
 
 
