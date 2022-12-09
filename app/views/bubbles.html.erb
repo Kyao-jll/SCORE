@@ -6,33 +6,29 @@
 
     function drawSeriesChart() {
 
-      var data = google.visualization.arrayToDataTable([
-        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
-        ['CAN',    80.66,              1.67,      'North America',  33739900],
-        ['DEU',    79.84,              1.36,      'Europe',         81902307],
-        ['DNK',    78.6,               1.84,      'Europe',         5523095],
-        ['EGY',    72.73,              2.78,      'Middle East',    79716203],
-        ['GBR',    80.05,              2,         'Europe',         61801570],
-        ['IRN',    72.49,              1.7,       'Middle East',    73137148],
-        ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
-        ['ISR',    81.55,              2.96,      'Middle East',    7485600],
-        ['RUS',    68.6,               1.54,      'Europe',         141850000],
-        ['USA',    78.09,              2.05,      'North America',  307007000]
-      ]);
+    var data = google.visualization.arrayToDataTable([
+      ['Name', 'Overall_Score', 'Area_Rent', 'Name', 'Square_Footage'],
+      <% @list_of_properties.each do |a_prop| %>
+      ['<%= a_prop.prop_name %>',<%= a_prop.scores.first.overall_score.to_json %>,<%= a_prop.area_rent.to_json %>,'<%= a_prop.prop_name %>',<%= a_prop.size_sqft.to_json %>],
+      <% end %>
+      
+    ]);
+    
+    var options = {
+      title: 'Area Rent vs Overall_Score' +
+        ' X=Overall_Score, Y=Area_Rent, Bubble size=Square_Footage, Bubble color=Name',
+      hAxis: {title: 'Overall_Score'},
+      vAxis: {title: 'Area_Rent'},
+      bubble: {textStyle: {fontSize: 11}}
+    };
 
-      var options = {
-        title: 'Rent vs Overeall_Score' +
-          'X=Overeall_Score, Y=Rent, Bubble size=sqft, Bubble color=property',
-        hAxis: {title: 'Overeall_Score'},
-        vAxis: {title: 'Rent'},
-        bubble: {textStyle: {fontSize: 11}}
-      };
+    var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+    chart.draw(data, options);
 
-      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
-      chart.draw(data, options);
-    }
-    </script>
-  </head>
-  <body>
-    <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
-  </body>
+    
+  }
+  </script>
+</head>
+<body>
+  <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+</body>
