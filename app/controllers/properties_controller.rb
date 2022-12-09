@@ -3,7 +3,7 @@ class PropertiesController < ApplicationController
   def analyze
     matching_properties = Property.all
 
-    @list_of_properties = matching_properties.order({ :created_at => :desc })
+    @list_of_properties = matching_properties.includes(:scores).where({ "scores.user_id" => @current_user.id }).order("scores.overall_score desc") 
 
     render({ :template => "/bubbles.html.erb" })
   end
