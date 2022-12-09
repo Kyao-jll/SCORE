@@ -1,5 +1,5 @@
 <div>
-<form action="/modify_score/<%= @the_property.scores.where({ :user_id => @current_user.id }).first.id %>"  method="post" >  <table class="table table-bordered">
+<form action="/modify_score/<%= @the_property.scores.first.id %>"  method="post" >  <table class="table table-bordered">
   <tr>
     <td rowspan="3">
       <img height="400" width="400" src="<%= @the_property.thumbnail %>">
