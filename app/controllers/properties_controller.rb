@@ -12,7 +12,7 @@ class PropertiesController < ApplicationController
     matching_properties = Property.all
 
 
-    @list_of_properties = matching_properties.includes(:scores).order("scores.overall_score desc") 
+    @list_of_properties = matching_properties.includes(:scores).where({ "scores.user_id" => @current_user.id }).order("scores.overall_score desc") 
 
     render({ :template => "properties/user_index.html.erb" })
   end

@@ -25,7 +25,7 @@ h1 {
           </td>
 
           <td rowspan="2" colspan="3">
-            Overall Score:<%=a_property.scores.first.overall_score%>
+            Overall Score:<%=a_property.scores.where({ :user_id => @current_user.id }).first.overall_score%>
           </td> 
 
           <tr>
@@ -44,7 +44,7 @@ h1 {
             </td>
 
             <td>
-              <% if a_property.scores.first.thumb1 == true %>
+              <% if a_property.scores.where({ :user_id => @current_user.id }).first.thumb1 == true %>
                 <img src="/Thumb_Up.png">
               <% else %>
                 <img src="/Thumb.png">
@@ -52,7 +52,7 @@ h1 {
             </td>
 
             <td>
-              <% if a_property.scores.first.thumb2 == true %>
+              <% if a_property.scores.where({ :user_id => @current_user.id }).first.thumb2 == true %>
                 <img src="/Thumb_Up.png">
               <% else %>
                 <img src="/Thumb.png">
@@ -60,7 +60,7 @@ h1 {
             </td>
 
             <td>
-              <% if a_property.scores.first.thumb3 == true %>
+              <% if a_property.scores.where({ :user_id => @current_user.id }).first.thumb3 == true %>
                 <img src="/Thumb_Up.png">
               <% else %>
                 <img src="/Thumb.png">

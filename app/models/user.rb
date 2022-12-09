@@ -15,6 +15,9 @@
 #
 class User < ApplicationRecord
   has_many :scores
+
+  has_many :rating, :through => :scores , :source => :property
+  
   validates :email, :uniqueness => { :case_sensitive => false }
   validates :email, :presence => true
   has_secure_password

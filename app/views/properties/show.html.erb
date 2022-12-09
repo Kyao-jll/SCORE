@@ -1,5 +1,5 @@
 <div>
-<form action="/modify_score/<%= @the_property.scores.first.id %>"  method="post" >  <table class="table table-bordered">
+<form action="/modify_score/<%= @the_property.scores.where({ :user_id => @current_user.id }).first.id %>"  method="post" >  <table class="table table-bordered">
   <tr>
     <td rowspan="3">
       <img height="400" width="400" src="<%= @the_property.thumbnail %>">
@@ -12,7 +12,7 @@
     </td>
 
     <td rowspan="2" colspan="3">
-      Overall Score: <%=@the_property.scores.first.overall_score%>
+      Overall Score: <%=@the_property.scores.where({ :user_id => @current_user.id }).first.overall_score%>
     </td> 
 
     <tr>
@@ -32,7 +32,7 @@
     
 
       <td>
-        <% if @the_property.scores.first.thumb1 == true %>
+        <% if @the_property.scores.where({ :user_id => @current_user.id }).where({ :user_id => @current_user.id }).first.thumb1 == true %>
           <input type="checkbox" checked = "checked" id="thumb1_box" name="query_thumb1" value= true>
         <% else %>
           <input type="checkbox" id="thumb1_box" name="query_thumb1" value= true>
@@ -41,7 +41,7 @@
       </td>
 
       <td>
-        <% if @the_property.scores.first.thumb1 == true %>
+        <% if @the_property.scores.where({ :user_id => @current_user.id }).where({ :user_id => @current_user.id }).first.thumb1 == true %>
           <input type="checkbox" checked = "checked" id="thumb2_box" name="query_thumb2" value= true>
         <% else %>
           <input type="checkbox" id="thumb2_box" name="query_thumb2" value= true>
@@ -49,7 +49,7 @@
 
         <label for="thumb2_box">Thumb Up</label>
       <td>
-        <% if @the_property.scores.first.thumb1 == true %>
+        <% if @the_property.scores.where({ :user_id => @current_user.id }).where({ :user_id => @current_user.id }).first.thumb1 == true %>
           <input type="checkbox" checked = "checked" id="thumb3_box" name="query_thumb3" value= true>
         <% else %>
           <input type="checkbox" id="thumb3_box" name="query_thumb3" value= true>
@@ -80,7 +80,7 @@
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <label for="public_transport_connectivity_box">
-                Public transport connectivity : <%=@the_property.scores.first.public_transport_connectivity%>
+                Public transport connectivity : <%=@the_property.scores.where({ :user_id => @current_user.id }).where({ :user_id => @current_user.id }).first.public_transport_connectivity%>
               </label>
 
             </button>
@@ -92,7 +92,7 @@
                   Walking distance to an underground station
                 </label>
 
-                <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station" value="<%=@the_property.scores.first.walking_distance_to_an_underground_station%>">
+                <input type="text" id="walking_distance_to_an_underground_station_box" name="query_walking_distance_to_an_underground_station" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.walking_distance_to_an_underground_station%>">
               </div>
 
               <div>
@@ -100,7 +100,7 @@
                   Connectivity to several tube lines
                 </label>
 
-                <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines" value="<%=@the_property.scores.first.connectivity_to_several_tube_lines%>">
+                <input type="text" id="connectivity_to_several_tube_lines_box" name="query_connectivity_to_several_tube_lines" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.connectivity_to_several_tube_lines%>">
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Private Transport Connectivity : <%=@the_property.scores.first.private_transport_connectivity%>
+              Private Transport Connectivity : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.private_transport_connectivity%>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -118,7 +118,7 @@
                 <label for="access_to_major_airports_box">
                   Access to major airports
                 </label>
-                <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports" value="<%=@the_property.scores.first.access_to_major_airports%>">
+                <input type="text" id="access_to_major_airports_box" name="query_access_to_major_airports" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.access_to_major_airports%>">
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Local Amenities : <%=@the_property.scores.first.local_amenities%>
+              Local Amenities : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.local_amenities%>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -137,7 +137,7 @@
                   Gyms/personal training/sports venues
                 </label>
 
-                <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues" value="<%=@the_property.scores.first.gyms_personal_training_sports_venues%>">
+                <input type="text" id="gyms/personal_training/sports_venues_box" name="query_gyms/personal_training/sports_venues" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.gyms_personal_training_sports_venues%>">
               </div>
 
               <div>
@@ -145,7 +145,7 @@
                   Restaurants
                 </label>
 
-                <input type="text" id="restaurants_box" name="query_restaurants" value="<%=@the_property.scores.first.restaurants%>">
+                <input type="text" id="restaurants_box" name="query_restaurants" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.restaurants%>">
               </div>
 
               <div>
@@ -153,7 +153,7 @@
                   Bars
                 </label>
 
-                <input type="text" id="bars_box" name="query_bars" value="<%=@the_property.scores.first.bars%>">
+                <input type="text" id="bars_box" name="query_bars" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.bars%>">
               </div>
 
               <div>
@@ -161,7 +161,7 @@
                   Cafes nearby
                 </label>
 
-                <input type="text" id="cafes_nearby_box" name="query_cafes_nearby" value="<%=@the_property.scores.first.cafes_nearby%>">
+                <input type="text" id="cafes_nearby_box" name="query_cafes_nearby" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.cafes_nearby%>">
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Building Amenities : <%=@the_property.scores.first.building_amenities%>
+              Building Amenities : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.building_amenities%>
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -180,7 +180,7 @@
                   Communal roof terraces
                 </label>
 
-                <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces" value="<%=@the_property.scores.first.communal_roof_terraces%>">
+                <input type="text" id="communal_roof_terraces_box" name="query_communal_roof_terraces" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.communal_roof_terraces%>">
               </div>
 
               <div>
@@ -188,7 +188,7 @@
                   Private roof terraces
                 </label>
 
-                <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces" value="<%=@the_property.scores.first.private_roof_terraces%>">
+                <input type="text" id="private_roof_terraces_box" name="query_private_roof_terraces" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.private_roof_terraces%>">
               </div>
 
               <div>
@@ -196,7 +196,7 @@
                   Cycle provisions
                 </label>
 
-                <input type="text" id="cycle_provisions_box" name="query_cycle_provisions" value="<%=@the_property.scores.first.cycle_provisions%>">
+                <input type="text" id="cycle_provisions_box" name="query_cycle_provisions" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.cycle_provisions%>">
               </div>
 
               <div>
@@ -204,7 +204,7 @@
                   Concierge service
                 </label>
 
-                <input type="text" id="concierge_service_box" name="query_concierge_service" value="<%=@the_property.scores.first.concierge_service%>">
+                <input type="text" id="concierge_service_box" name="query_concierge_service" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.concierge_service%>">
               </div>
 
               <div>
@@ -212,7 +212,7 @@
                   Cafe
                 </label>
 
-                <input type="text" id="cafe_box" name="query_cafe" value="<%=@the_property.scores.first.cafe%>">
+                <input type="text" id="cafe_box" name="query_cafe" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.cafe%>">
               </div>
 
               <div>
@@ -220,7 +220,7 @@
                   Dedicated tenant entrance or reception desk
                 </label>
 
-                <input type="number" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk" value="<%=@the_property.scores.first.dedicated_tenant_entrance_or_reception_desk%>">
+                <input type="number" id="dedicated_tenant_entrance_or_reception_desk_box" name="query_dedicated_tenant_entrance_or_reception_desk" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.dedicated_tenant_entrance_or_reception_desk%>">
               </div>
             </div>
           </div>
@@ -230,7 +230,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Building Infrastructure : <%=@the_property.scores.first.building_infrastructure %>
+              Building Infrastructure : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.building_infrastructure %>
             </button>
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
@@ -240,7 +240,7 @@
                   Smart building infrastructure
                 </label>
 
-                <input type="number" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure" value="<%=@the_property.scores.first.smart_building_infrastructure%>">
+                <input type="number" id="smart_building_infrastructure_box" name="query_smart_building_infrastructure" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.smart_building_infrastructure%>">
               </div>
             </div>
           </div>
@@ -250,7 +250,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Staff Impact : <%=@the_property.scores.first.staff_impact%>
+              Staff Impact : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.staff_impact%>
             </button>
           </h2>
           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -260,7 +260,7 @@
                   Natural light
                 </label>
 
-                <input type="number" id="natural_light_box" name="query_natural_light" value="<%=@the_property.scores.first.natural_light%>">
+                <input type="number" id="natural_light_box" name="query_natural_light" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.natural_light%>">
               </div>
             </div>
           </div>
@@ -269,7 +269,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSeven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              Flexibility : <%=@the_property.scores.first.flexibility%>
+              Flexibility : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.flexibility%>
             </button>
           </h2>
           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
@@ -279,7 +279,7 @@
                   Ability to expand
                 </label>
 
-                <input type="number" id="ability_to_expand_box" name="query_ability_to_expand" value="<%=@the_property.scores.first.ability_to_expand%>">
+                <input type="number" id="ability_to_expand_box" name="query_ability_to_expand" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.ability_to_expand%>">
               </div>
             </div>
           </div>
@@ -288,7 +288,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-              Image/Brand/Profile : <%=@the_property.scores.first.image_brand_profile%>
+              Image/Brand/Profile : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.image_brand_profile%>
             </button>
           </h2>
           <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
@@ -298,7 +298,7 @@
                   Ability to brand building
                 </label>
 
-                <input type="number" id="ability_to_brand_building_box" name="query_ability_to_brand_building" value="<%=@the_property.scores.first.ability_to_brand_building%>">
+                <input type="number" id="ability_to_brand_building_box" name="query_ability_to_brand_building" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.ability_to_brand_building%>">
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingNine">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              Competitor/Client Access : <%=@the_property.scores.first.competitor_client_access%>
+              Competitor/Client Access : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.competitor_client_access%>
             </button>
           </h2>
           <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
@@ -317,7 +317,7 @@
                   Proximity to clients
                 </label>
 
-                <input type="number" id="proximity_to_clients_box" name="query_proximity_to_clients" value="<%=@the_property.scores.first.proximity_to_clients%>">
+                <input type="number" id="proximity_to_clients_box" name="query_proximity_to_clients" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.proximity_to_clients%>">
               </div>
 
               <div>
@@ -325,7 +325,7 @@
                   Proximity to competitors
                 </label>
 
-                <input type="number" id="proximity_to_competitors_box" name="query_proximity_to_competitors" value="<%=@the_property.scores.first.proximity_to_competitors%>">
+                <input type="number" id="proximity_to_competitors_box" name="query_proximity_to_competitors" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.proximity_to_competitors%>">
               </div>
             </div>
           </div>
@@ -341,7 +341,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTen">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-              Sustainability/Wellness : <%=@the_property.scores.first.sustainability_wellness%>
+              Sustainability/Wellness : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.sustainability_wellness%>
             </button>
           </h2>
           <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
@@ -352,7 +352,7 @@
                   Epc
                 </label>
 
-                <input type="number" id="epc_box" name="query_epc" value="<%=@the_property.scores.first.epc%>">
+                <input type="number" id="epc_box" name="query_epc" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.epc%>">
               </div>
 
               <div>
@@ -360,7 +360,7 @@
                   Breeam
                 </label>
 
-                <input type="number" id="breeam_box" name="query_breeam" value="<%=@the_property.scores.first.breeam%>">
+                <input type="number" id="breeam_box" name="query_breeam" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.breeam%>">
               </div>
             </div>
           </div>
@@ -371,7 +371,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingEleven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-              Deliverability and Specification : <%=@the_property.scores.first.deliverability_and_specification%>
+              Deliverability and Specification : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.deliverability_and_specification%>
             </button>
           </h2>
           <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
@@ -381,7 +381,7 @@
                   Specification
                 </label>
 
-                <input type="number" id="specification_box" name="query_specification" value="<%=@the_property.scores.first.specification%>">
+                <input type="number" id="specification_box" name="query_specification" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.specification%>">
               </div>
 
               <div>
@@ -389,7 +389,7 @@
                   Ability to influence design
                 </label>
 
-                <input type="number" id="ability_to_influence_design_box" name="query_ability_to_influence_design" value="<%=@the_property.scores.first.ability_to_influence_design%>">
+                <input type="number" id="ability_to_influence_design_box" name="query_ability_to_influence_design" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.ability_to_influence_design%>">
               </div>
 
               <div>
@@ -397,7 +397,7 @@
                   Landlord credibility
                 </label>
 
-                <input type="number" id="landlord_credibility_box" name="query_landlord_credibility" value="<%=@the_property.scores.first.landlord_credibility%>">
+                <input type="number" id="landlord_credibility_box" name="query_landlord_credibility" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.landlord_credibility%>">
               </div>
             </div>
           </div>
@@ -406,7 +406,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwelve">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-              Timing : <%=@the_property.scores.first.timing%>
+              Timing : <%=@the_property.scores.where({ :user_id => @current_user.id }).first.timing%>
             </button>
           </h2>
           <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
@@ -416,7 +416,7 @@
                   Pc date
                 </label>
 
-                <input type="number" id="pc_date_box" name="query_pc_date" value="<%=@the_property.scores.first.pc_date%>">
+                <input type="number" id="pc_date_box" name="query_pc_date" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.pc_date%>">
               </div>
 
               <div>
@@ -424,7 +424,7 @@
                   Early access
                 </label>
 
-                <input type="number" id="early_access_box" name="query_early_access" value="<%=@the_property.scores.first.early_access%>">
+                <input type="number" id="early_access_box" name="query_early_access" value="<%=@the_property.scores.where({ :user_id => @current_user.id }).first.early_access%>">
               </div>
             </div>
           </div>
